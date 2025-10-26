@@ -1,0 +1,1 @@
+window.socialloginproVersion = "2.0";

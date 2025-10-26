@@ -1,0 +1,1 @@
+window.badgeawardsVersion = "2.6.2";

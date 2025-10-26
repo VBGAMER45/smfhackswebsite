@@ -1,0 +1,1 @@
+window.adSellerVersion = "3.0.6";

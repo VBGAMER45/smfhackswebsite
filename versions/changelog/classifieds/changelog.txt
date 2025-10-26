@@ -1,0 +1,599 @@
+﻿5.1.4
+!Fixed for PHP 7.4
+
+5.1.3
+!Fixed countdown date on category display and other non view listing pages for SMF 2.0 and SMF 2.1.x
+
+5.1.2
+!Fixed displaying the paypal email address on edit auction/listing
+
+5.1.1
++Made text more clear on bid/purchase permissions. Added note on category level permissions.
+!Watermark handling improved.
+!Removed Google+ Setting no longer used
+
+5.1
++SMF 2.1.x support
+!Minor bug fixes
+
+5.0.1
++Made the select category dropdown more friendly when showing subcategories
+
+5.0
++New Interface for SMF Boards feature for auto posting! You can now take over that board and have the exact look and feel of SMF.
+It overrides that boards interface and adds some classifieds features to it. I believe this may help increase user engagement as well with the Classifieds area since it is in the main boards area and any post will appear in the recent posts in SMF.
+I recommend a new board with empty topics and disabling the option to create new topics inside it. For SMF 2.0.x only!
+ 
++Trader Rating Count now displayed on the view bids page
++Added paypal locale support to do customizations for international users. Under Admin -> Classifieds Configuration -> Payment Modules
+!https picture links now supported in listings
+!Allow classifieds admins the option to manage listing pictures/files if bids were made
+!Update personal messages to not use urls as much and link to the members profile
++Seller information added on payment page if no paypal is displayed
++Added pay now link under MyBids section if your bid was accepted for the auction/listing
++Added on MyListing page listing status/current bid amount. Also the option to relist an item
+!Place bid page now formats the greater than amount in the currency used for the listing
+!Fixed an issue where the currency can be listed wrong on the view bids page
+!Fixed undefined secondary paypal email address when editing an auction/listing
+!Make sure paging for transaction list and shipping area stays in admin area for SMF 2.0.x
+!AddThis widget now loaded over https
+
+This upgrade requires an uninstall of the old version and install of the new version
+
+
+4.0.13
+!Fixed some SSL resources for facebook/twitter not being on SSL
+
+4.0.12
+!Removed the seventh parameter of mktime call which was removed in PHP7
+
+4.0.11
++Added setting to disable lightbox 
++Added setting to disable reject option for buy it now
+
+4.0.10
+!Removed some mysql_ functions from SMF 2.0 version
+
+4.0.9
+!Fixed showing regular members on permission list of category level permissions if a guest permission is set.
+
+4.0.8
+Crtical Update if you were on 4.0.7
+!Removed auto accept bid feature in 4.0.8 did not work and caused more issues than it solved.
+
+4.0.7
++Added setting to auto accept bids in auction instead of waiting for the auction owner to approve the bid
+
+4.0.6
+!PayPal IPN https updates required by Sept 30, 2016
++RSS Feed struture updates to pass w3 validation
+
+4.0.5
+!Fixed check for listing credits,listing purchases if you are using both at the same time
+
+4.0.4
+!Delete temp file if not a valid picture file for disk space/security
+
+4.0.3
+!Fixed possible undefined error with keywords on edit listing/auction
+
+4.0.2
+!Fixed not displaying the recent bids on the homepage for the second layout option if you had the setting disabled.
+
+4.0.1
+!Fixed undefined on add listing/add auction if you didn't have the insert into post option
+
+4.0
++Moderation Center with moderation log added with central tab that includes listing approvals, comment approvals and now the moderation log for actions made by classified admins
++Added setting to show stats box on main page of classifieds area. Lists total listings, comments, views
++Comment display now includes the total number of comments next to Comments on view auction/listing
++Now inserts keywords into SMF Tags if you have the smf tagging system installed and post to a board
++Better linktree when performing certain actions
+!Fixed style issue with category showed on main board index setting SMF 2.0
++Top tabs added on add/edit/delete category and tab load code is always loaded now.
+!Cleaned link display for category options inside a category
++Unapproved comments now visible to admins/comment owners when viewing a listing
++Comment background color now alternates for each comment row
+!MyListings now hides deleted/removed listings
++MyListing page uses different background color for unapproved listings SMF 2.0
++Added some notes on add/edit page to give more information on some settings
+!Reduced some category permission code for guests/regular members
+
+3.0.2
++New settings under Layout Settings to hide fields on add listing/adduction and display hide keywords hide buyitnow button hide shipping price hide qty
+
+3.0.1
+!Fixed CatPermCopy error in SMF 2.0.x
++Better searching using special characters/other languages
++Better support for other languages in SMF 2.0
+
+3.0
++Quantity's now supported for fixed price listings. You can now sell the same item multiple times in one listing.
++Added simple relist system. One quick preloads all previous listing/auction information into a new auction/listing.
++MyFeedback area if trader system is enabled. Lists all feedback that the user has left or received.
++Updated html markup style to improve display for SMF 2.0
++Alternate table row styles in different sections of the admin area to make it easier to read
++Added notification system via emails for listings requiring approval and comments waiting approval
++New setting to count member comments as posts
++Added checkbox approve/delete listings/comments on the comment approval and listing approval page
++Better Copyright Removal upgrade system
+!Expire date now starts from the approval date of the listing.
+!No longer show bid number on listing category display areas for listings that are not auctions.
++Membergroup link color added though the classifieds system
++New Select box custom field type for categories
++Added an option to store the paypal address when adding a listing/auction for future use.
++Added sorting in SMF 1.1.x in the listall function.
++Added link to buyer in seller pm sent on buy it now
+!Made sure currency is included in buy/sell/bid pm's
+!Fixed return to listing link on buy it now pages.
+
+2.0.21
+!Fixed orphaned subcategories if deleting a category with subcategories and deleting the lists. The subcategories are now moved back to the main classifieds
+
+2.0.20
+!Changed how "Allow members to delete their own listings if no bid" works. No allows deleting if the listing is completed or closed.
+!Hide add picture if listing can not have pictures and no ad picture upgrade is an option.
+
+2.0.19a
+!Bug Fix SMF 1.1.x on view classified check accepted db query missing arguments
+
+2.0.19
+!Do not show bid number for listings for regular end users of the listing. Only visible now to listing owner and classifieds admins
+!Fixed two session checks in SMF 1.1.x
+!Fixed bug with paid listing if you had the credit system disabled not showing the payment screen.
+!Centered custom membergroup price page
+
+2.0.18
+!Updated facebook sharing code
+
+2.0.17
+!Smarter double post checking wrote error out when making a listing/auction/comment if there was an error first with the input until all conditions are met.
+!Corrected some issues with category level permissions
+
+2.0.16
++Added support for post based groups for category level permissions
+
+2.0.15
+!IPN fixes for paypal update for Feb 1, 2013
+
+2.0.14
+!Fixed permission issue on blocks for recent comments and recent bids which could show hidden categories
++Added extra checking if you a forum board is deleted does not affect if you have a classifieds posted to the deleted board using the category autoposting system.
+!Allowed auction/listing owners and winning bidders always to have access to listings to view after it has expired or completed.
+!Better removing auctions/listings on bid being accepted for auctions/listings
+
+2.0.13
+!Fixed bug with showing order screen when credits already purchased from credit packages if you had listing credits also enabled.
+
+2.0.12
+!Fixed undefined new index on board index in SMF 2.0 if you were showing classified categories on board index
+!Fixed bug if you were a guest placing a bid would redirect to a page causing an error
+
+2.0.11
+!Fixed permission issue when editing pictures of a listing
+!Added another check on give credits to fix an SQL error.
+!Changed out the Facebook sharing code to a new version of the code
+!Made it so admin's can edit auctions if they are running or have bids
+
+2.0.10 
++Added setting to hide the send to friend under Classifieds Configuration -> Layout Settings -> Hide Send To Friend Link
+
+2.0.9
+!Fixed bug on give free credit for a category in SMF 2.0
+!Fixed the paypal paymetn cancel return path if the user clicks cancel link in paypal
+!Fixed edit category text string inside a category in SMF 2.0
+!Fixed undefined in tag cloud
+!Fixed missing paging on listall for most comments and most viewed in SMF 2.0
+
+2.0.8
++Added edit/delete/permissions link inside the category. Needed to add them if the feature simple main layout is used to have options to edit the category
+
+2.0.7b
++Added South African Rand for display only no paypal support.
+
+2.0.7
+!Fixed bug with accepted pm having a bad url to the profile
+!Fixed recaculating category totals for categories that require listing approval
+!Fixed issue with auctions if starting price is the same as buy it now price not to give error that the bid needs to be higher if the bid exceeds the buy it now price.
++Auto accepts if buy it now is made via a bid in an auction
++Added sharing icon for Google+ setting
++Added setting to control number of items to show in the index page blocks such as for recent listings, featured etc
+!Fixed countdown text color when under a minute left and exactly zero seconds per minute
+!Changed behavior on the extend listing upgrade. Adds an additional amount instead of increasing from the current start date and the start date does not change.
+
+2.0.6
++Added facebook sharing meta data to share description,title
++New layout setting under Layout Settings "Use simple main layout with recent listings as the focus" 
+
+2.0.5
+!Fixed issue with receiving IPN payments in SMF 2.0. SMF added another security check that prevented guests from accessing SSI which also caused other scripts that include SSI as guest to fail.
+
+2.0.4
+!Fixed editing custom field in SMF 2.0
+!Now hide deleted listings from  the my listings page
++Added form check for duplicate listings/auction on submission
+
+2.0.3
++Added setting to setup a default picture under Classifieds Settings -> Layout Settings
+
+2.0.2
+!Fixed bug with resizing images in the Classifieds
+
+2.0.1
+!In some cases if you have auto accept bidding enabled along with expiring auctions that do not delete a pm could keep on sending to the failed bidder
+
+2.0
++Credit system for buying credits for listings/auctions and upgrades. Admins can setup credit packages. Useful for decreasing paypal transaction fees when buying larger dollar amounts for packages
++Added checkall function to the recycle bin listings page
++Added censortext functions to view listing for title/description, and title on listing results page
++Added post ban checks for adding listings/auctions and comments
+!If bid increments are used do not allow you to bid less than the increment amount between bids
++Added category column on the unviewed listing page
++Custom Fields can now be shown on category listing display
++Added category permission copy feature
++Added setting to resize images if they are too large
++Added editing of custom fields
+!Fixed bug in add listing/add auction button on category view going to category select
++Added online/offline status near member's name on view listing. If online/offline statuses are enabled in SMF
++Added Facebook,Twitter,AddThis sharing icons on view listing page settings
++Added watermark settings for uploaded pictures
++Added new icon in a couple places to indicate if the auction/listing is unviewed
++Added upload form on auction/listing page to add a single picture if image uploads are allowed to make it a little easier.
+!Fixed thank you page html display issue.
+!Fixed missing from email on ipn emails
++Added navigation tabs in a bunch of places
+
+1.3.10
++Added add listing,add auction links in the top menu bar of the classifieds which will allow users to find the add listing areas easier.
+
+1.3.9
++Added unlimited subcategory listing total counting when you have count subcategories enbabled
+
+1.3.8
++New curriencies supported Brazilian Real,Israeli New Sheqel,Malaysian Ringgit,Mexican Peso,Philippine Peso, Taiwan New Dollar    
+
+1.3.7
++Added support for SMF 2.0 RC4
+!Fixed couple of issues with formating of rss feeds
+
+1.3.6.1
+!Important bug from 1.3.6 for SMF 2.0 incorrect data was being inserted on add listing
+
+1.3.6
+!For auctions no longer allow bids below starting price.
++Added new setting to store starting price to fix issue when clearing bids/reject bids in a zero starting price for an auction
+!Fixed issue with MySQL 5.5 since it no longer supports the Type for create tables uses Engine instead
+
+
+1.3.5
+!Fixed possible keyword sql error on updating a listing.
+!Fixed undefined error on sort change for member listings for SMF 2.0
+!Added some other checking to prevent some undefined errors
++Added intergration with AdSeller Pro - On listing view and inside categories of listings
+
+1.3.4
+!Add another check for sending a pm on placing a bid to avoid a db error.
+!Comments make sure email addresses are hidden if they are chosen to be fixed for SMF 2.0
+!Fixed paging for some list all results for SMF 2.0
+!Fixed bug with not parsing bbc for description of classifieds category on board index (Requires full reinstall to take affect)
+
+1.3.3.1
+!Fixed bug getting pricefromgroup on order credits
+
+1.3.3
++Updated Classifieds style for SMF 2.0 to use more curve elments
+
+1.3.2
+!Fixed verbage on Show number of bids
+!Missed one hardcoded m for date format for SMF 1.1.x
+!Fixed delete listing call for SMF 1.1.x in two spots
+
+1.3
++Added integration on the main board index with the classifieds system
++Added Show Member's Listings to give a list of all listings made by a member
++Added category level option to allow users to control how days to list their listing
++Added an option to hide paypal address field on add/edit auctions and listings
++Added Tag Cloud option for the main page
++Improved category select dropdowns with improved ordering
++Added MyBids link to see a list of listings that you are bidding on
++Added Recent Comment and Recent Bids option to be shown on the classifieds index
++Added link tree to more areas in the Classifieds system
++Updated the table layout for better support SMF 2.0 RC2
++Added views column on the MyListings page
++Added Classifieds prefix to classifieds functions
++Added navigation buttons to the top of the listall page
++Sorting on unviewed listings
++Sorting by number of comments, time left
++Moved layout settings into a separate layout settings page
++Latest Listing Category option added
++Added Discussion Link on the view listing page if there was a topic created for the listing
++Added database indexes on key tables to improve performance
++Trader System feedback only after winning a listing/auction
+!Moved Classifieds Admin area location in RC2 to allow classifieds moderators better access
+!Only show the upgrade button if there are upgrade options!
+!Date characters for h d m s for countdown timer moved to language file
+!Fixed spell check button SMF 2.0
+!Fixed navigation buttons on add/edit comment for SMF 2.0
+!Fixed page title on MyCredits
+!Fixed guest add comment if visual confirmation was enabled SMF 2.0
+!Fixed path to prototype.js which is used for lightbox and fixed close button image for the lightbox
+!Fixed missing end date column on list for all
+
+
+1.2.27
++Added intial support for SMF 2.0 RC2
+!Changed formating of time on view bids time to display using offsets
+!Fixed outbid emails to use proper currency
+
+1.2.26
+!Fixed bbc editor in SMF 2.0 not working in IE6/IE7
+!Fixed who is viewing for categories/listings
+
+1.2.25a
+!Fixed a bug with undefined verification message for SMF 2.0 on send to a friend
+
+1.2.25
+!Fix bug on autoaccept bid for SMF 1.1.X for sending email to seller
++Added failed win pm on autoaccept if the bid did not meet the reserve price
+
+1.2.24
++Email now sent to the seller if the bid is auto accepted
+!Fix display of private bids to the listing owner on the view bids page
+!Do not auto accept bid if reserve price is greater than the bid amount
+
+1.2.23
+!If admin changes the listing date in the future prevent people from biding/buying until auction/listing starts
++Added images into RSS feeds if there is an image on the auction/listing
+!Fixed possible repeated items in the blocks on the classifieds main page.
+!Fixed giving free credits to a user not logging transaction id which made credits appear not used
+!Fixed buy it now personal message to the listing owner
+
+1.2.22.1
+!Fixed a bug if you have hide subcategories it would still show the comma seperator
+
+1.2.22
+!Fixed issue with "Require Price for all Listings. No Zero priced items" setting not being saved in SMF 1.1.x
++For topics that posted to boards if the listing/auction is deleted the topic is removed as well does not apply to recycled listings.
+!Fixed issue when editing an auction was defaulting to USD currency instead of the currency selected
+!Fixed outbid personal message showing %username no longer needed since bids can be made private remove from the language strings.
++Added comma seperator between multiple subcategories on the main classifieds index
+
+1.2.21.1
+!Fixed database error SMF 2.0 deleting listing
+!Fixed database error SMF 2.0 on buy it now.
+
+1.2.21
+!Fixed xhtml erorrs with missing alt tags for images
+!Fixed database error SMF 2.0 on buy it now.
+!Fixed database error SMF 2.0 on placing a bid
+
+1.2.20
++Added auto delete auction and listings when completed settings
++Added a setting to auto accept bid when auctions end
+!Fixed a space in some versions of Internet explorer on the listings view page in a category which would result in buttons being placed one line above.
+
+1.2.19.5
+!Fixing issues with bidding on listing/auctions due to category level permissions.
+
+1.2.19.4
+!Fixed a couple bugs with the category level permissions with members that have additional groups
+
+1.2.19
+!Fixed bug in the outbid pm and bid made pm to the seller if the bid was not a private bid it would hide the bid information.
++Added BBC box to descriptions on category add/edit for SMF 1.1.x
++Added bid increments for auction listings
++Added option to require a price of not zero for listings
++Added category level permissions. Which include add listing, add auction, view category, place bids, and add comments
+!Fixed edit category not showing bbc in SMF 2.0
+!Fixed title of SMF Classifieds for simple permissions in SMF 2.0 if you do a full install it will appear
+!Fixed header title of the admin tabs of the classifieds in SMF 2.0
+
+1.2.18
+!Fixed a couple of undefined errors.
++Now adds a transaction in the transaction log when giving a free credit which allows credit to be seen by the user on the mycredits page.
+!Fixed rejecting listings bids resulting in a zero price.
+!Fixed issue in the category listing view missing an extra td for the checkboxes
++Added time left on the MyListings Page
++Added Post Group's to custom price's
+
+1.2.17
++Added feature for classifieds admin's to bulk delete/recycle listings inside a category using a checkbox system.
+!Fixed bug with editing a picture for a listing/auction if you tried to change a picture to an upload instead of a url based picture
+!Fixed bug with user's deleting their own listings
+
+1.2.16
+!Fixed bug if you have remote images disabled not allowing you to upload an image.
+
+1.2.15
+!Fixed issue with xml feed if the forum is using gzip compression
+!Fixed bugs with SMF 2.0 using the WYSIWYG editor
+!Fixed visual verfication for guest comments and send to a friend for SMF 2.0
+!Fixed a couple undefined errors on the comment display for SMF 2.0
+!Fixed permission check for save payment modules
++Added editor to the category description
++Added remote picture support and a setting to enable or disable it
++Moved the images,cs,js folder to the classifieds folder
++Added feature to allow members to delete their own listing if no bids are made
+!Fixed view more pictures edit/delete link permissions to allow listings owner to see them
+
+1.2.14
+!Fixed adding extra //'s with a listing/auction description
+!Fixed issue showing reserve not met for listings/auctions that reserve price set to 0
+!Fixed a couple undefined errors in the list all function
+!Fixed a bug that could occur if output is started before xml feed.
+
+1.2.13
++Added tracking of which listings were viewed and added unviewed tab to the main menu to view which listings have not been viewed yet.
++Added a setting that allows listings owners to view which members have viewed their listings can be set in the settings 
++Added setting to hide subcategories on the index page.
++Added settings to change the date time format useful for other countries
+!Fixed list all function not to show price of $0 if the listing was in a no price category
+
+1.2.12
+!Fixed an issue with handling of uploaded images. An image could be crafted that could a security issue.
+
+1.2.11
++Added Thai Baht currency support does not work with PayPal
+
+1.2.10
++Added support for themes that do not have tabs.
++Made user display for comments more like posting display.
+!Fixed searching for specific member's using search.
++Added link tree for unlimited subcategories
+!Fixed possible issue if other modifications set their own theme html_headers such tp shoutbox
+
+1.2.9
++Added a sandbox option for paypal under payment modules and adding more debug code to classifiedsipn.php
+
+1.2.8
++Added Indian INR for price display
++Added theme link tree to certain pages.
++Changed main page index layout a little bit.
+
+1.2.7
+!Fixed a couple bugs with custom fields for auction listings
+
+1.2.6
+!Fixed default currency to show the one in settings when adding an auction/listing
+!Fixed possible pound sterling character display issue.
+
+1.2.5
+!Fixed issue with emails for purchase of upgrades.
+
+1.2.4
+!Fixed a layout issue on view listing page.
+
+1.2.3
+!Fixed a couple of bugs with searching for listings.
+
+1.2.2
+!Fixed a couple undefined errors on the list all page.
+!Changed view listing to say price instead of current bid if it is a listing
+!Fixed outbid message to include member's name if it is not a private bid.
+!Changed text for placing a bid on a buy it now to say buy it now in the pm
+
+1.2.1
++Added checkboxes to the recycle bin to make it easier to delete old listings
+!Fixed a bug on the edit files and pictures page for listing picture space upgrades that were not working
+
+1.2
++Added current version of the classifieds modification under settings.
++Added option to hide bid history completely to all non classifieds admins.
++Added a countdown script to the listings
++New tabs for the admin section for the classifieds
++Adding sorting by columns inside the categories
++Minor layout changes
++Added a pm is now sent when free credits are given to a user.
++Added option to send pm to the listing owner on a new comment for their listing
++Added a MyListing section
+!Fixed bug with rejecting bid showing the reserve price.
++Changed the color to the countdown if there is only five minutes left in the listing
++Added a setting to allow counting of views for a listing only once per session to help people from increasing the views on a listing.
+!Fixed keywords on view listing that had an extra space before the tag name
++Added CAPTCHA for guest comments on listings if you have CAPTCHA enabled on your forum
+!Fixed a bug that allowed a category to be a parent of itself
++Added date range and member name on the search page
++Added buyers and sellers terms of use
++New setting that allows you to check if a snipe bid has been made in the last couple minutes to extend the listing by another five minutes
++Added a spot for shipping prices for listings
++Added featured listing block
++Added a clear bids option to the manage listings page
++Added on the view listing page text to indicate if you are the high bidder.
+!Fixed a bug with listing approval were admin's could not view the listing unless it was approved.
++Added category to the listing approval page
++Added an option to show RSS Feed icon next to each category name
++Added BBC box to adding auctions/listings
++Added a list all option the blocks on the main index page of the classifieds
+!Fixed a bug that revealed who placed a bid even if it was marked as a private bid
++Added countdown and listing ending date to the place bid page if they are enabled on viewing the listing.
++Added more RSS functions to get recent listings by category, listings by most views, and the latest bids.
+!Fixed a bug with custom membergroup prices if the price was set to zero still asked them to place an order for listings.
++Added Auto Board posting of listing as an option when you create a category. When a listing is created will autocreate a post when it is approved inside a board of your choice.
++Added a setting to show how much time is left in the category list using days,hours,minutes,seconds
++Added option for admin's under manage listing to change the listing start date and modified end listing to allow changing of seconds
++Added option for admin's to change a bids text to a custom completed text when the auction ends.
++Added option to show timeleft on blocks
++Added notify option on categories for users to watch categories for new listings that are created
++Added free upgrades not to redirect to paypal
+!If the user is admin of the classifieds make the upgrades free for any listing they wish to modify
++Added send to a friend feature on the view listing page
+
+1.1.5
+!Fixed a couple minor things that caused some errors in the forum's error log
+
+1.1.4
++Added an option for admins to modify a listing toggle whether it is featured or not.
++Made the featured listing stand out a little more for most themes uses windowbg instead of windowbg2
+
+1.1.3
++Added lightbox to picture listing page for a listing.
+!Changed the page listing function to use smf's built in function.
+!Fixed the subcategory display on underneath parent categories to be in the correct order.
+!Fix the PM from name using a random name on the forum
+
+1.1.2
+!Fixed turning off who is viewing a listing or category in the settings page.
+
+1.1.1
++Added support for custom membergroup prices for a auction/listing
+
+1.1
++Added option when deleting the listing to move the listings to another category or delete all the listings.
++Added RSS feed for recent listings. Accessed via index.php?action=classifieds;sa=rss
+!Fixed rejecting bids if not top bid don't modify listing status.
++Allowed admin's to buy listings for free.
++Added option to give all free credits to buy listings to a member.
++Added option to add a PayPal address to receive payment.
++Added option to only show bid history if the user bid on the item
++Added option for ad's to auto delete if expired
++Added recycle bin for expired auto deleted ads.
+
+
+1.0.12
++Added buy it now price on the listing page and the confirm buy it now page
++Added some links in some places such as bidding and buy it now place to return to the listing
+!Fixed listing buy it now display button and changed how some elements are shown.
+
+1.0.11
+!Fixed issue with items costing more than $9999.99
+
+1.0.10
+!Fixed showing price and number of bids in the blocks on the main classifieds page for wanted items that have no price.
+
+1.0.9
++Added formatting for Canadian and Australian dollars.
+
+1.0.8
+!Fixed bug with editing auctions caused unlimited date
+
+1.0.7
++Added option on admin listing page to change the category of the listing
+
+1.0.6
+!Fixes date bug on listing view for categories where the listing never ends.
+!Time when adding a listing now respects the current forum time offset
+
+1.0.5
+!Will no longer show reserve price not met or met for listings
+!Wanted categories will no longer require price to be entered
+!Hide the price of the listing when searching if it is a wanted category
++Added settings to set max image width, height, and filesize.
++Added displaying subcategories under categories on category index if counting subcategories total is enabled
++Added buy it now button and changed it to use buy it now button only for listings
+
+1.0.4
+!Fixed editing auctions
+
+1.0.3
++Added setting for no price categories. Good for making a wanted listing category.
+!Fix a bug with unlimited days listings when they were created.
+
+1.0.2
+!Fixed accepted pm message
+!Fixed custom fields order
++Added warning if SMF Trader not installed
+
+1.0.1 
++Currency added
+
+1.0 Initial Release

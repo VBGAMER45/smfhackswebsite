@@ -1,0 +1,1 @@
+window.hashtagsVersion = "1.0";

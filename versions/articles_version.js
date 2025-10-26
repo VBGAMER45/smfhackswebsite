@@ -1,0 +1,1 @@
+window.articlesVersion = "3.2";

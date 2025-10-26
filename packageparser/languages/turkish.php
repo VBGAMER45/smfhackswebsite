@@ -1,0 +1,64 @@
+﻿<?php
+$txt['copyright_end'] = 'Translation to Turkish by <a href="http://www.simplemachines.org/community/index.php?action=profile;u=6171">alperuzi</a>';
+
+
+$txt['add_after'] = 'Sonrasına ekle';
+$txt['add_before'] = 'Öncesine ekle';
+$txt['add_end'] = 'Dosyanın sonuna ekle';
+$txt['boardmod'] = 'Modifikasyon BoardMod formatında';
+$txt['cannot_extract'] = 'Arşivden çıkartılamadı. Bozuk dosya?';
+$txt['choose_version'] = 'SMF sürümünüzü seçin';
+$txt['copy_to'] = '%s dosyası %s hedefine kopyalanacaktır'; // [File] will be copied to [destination]
+$txt['create_dir_in'] = '%s klasörü %s içinde oluşturulacaktır'; // [Directory name] will be created in [destination]
+$txt['create_file_in'] = '%s isminde boş bir dosya %s içinde oluşturulacaktır';
+$txt['dirs_created'] = 'Oluşturulan klasörler';
+$txt['dirs_deleted'] = 'Silinen klasörler';
+$txt['dirs_installed'] = 'Kurulmuş klasörler';
+$txt['dirs_moved'] = 'Taşınmış klasörler';
+$txt['do_something'] = 'Bununla birşey yapın: (pozisyon belirtilmemiş)'; // Used when position (before, after, replace, end) is not specified in a mod XML file
+$txt['delete'] = '<b>Sil</b>';
+$txt['deleted'] = '%s silinecektir'; // [name] will be deleted
+$txt['edits_all'] = 'Tüm değişiklikler (varsayılan)';
+$txt['edits_theme'] = 'Sadece Tema değişiklikleri (temayı modifikasyona göre uyarlamak için)';
+$txt['files_created'] = 'Oluşturulan boş dosyalar';
+$txt['files_deleted'] = 'Silinen dosyalar';
+$txt['files_installed'] = 'Kurulan dosyalar';
+$txt['files_moved'] = 'Taşınan dosyalar';
+$txt['find'] = 'Bul';
+$txt['general'] = 'Genel Paket Bilgisi';
+$txt['general_description'] = 'Paket hakkındaki genel bilgiler, ID ve ismi gibi.';
+$txt['id'] = 'Paket ID';
+$txt['install'] = 'Kurulum';
+$txt['installable'] = 'Kurulabilmesi';
+$txt['installation'] = 'Kurulum';
+$txt['instructions'] = '%s bilgisi, SMF sürümleri: %s'; // First %s is either 'Installation' or 'Uninstallation', second %s is the actual versions
+$txt['in_file'] = '%s dosyasında';
+$txt['invalid_archive'] = 'Geçersiz arşiv formatı';
+$txt['modification_smf'] = 'SMF dosyalarına modifikasyonlar';
+$txt['mod_no_exist'] = 'Hata: Modifikasyon XML dosyası (%s) bulunamıyor!';
+$txt['move_to'] = '%s buradan %s buraya %s taşınacaktır'; // [name] will be moved from [source] to [destination]
+$txt['name'] = 'Paket ismi';
+$txt['no_packageinfo'] = 'Modda package-info.xml yok! Bozuk mu acaba?';
+$txt['not_defined'] = 'Tanımlanmamış';
+$txt['not_installable'] = 'Hata: Bu paketin seçilen sürümde %s imkansızdır!  SMF sürüm: %s'; // Error: This package is not [installable/uninstallable] on SMF [version]
+$txt['operation'] = 'İşlem'; // Operation, as in action to perform
+$txt['php_script'] = 'Yürütülecek PHP scripti';
+$txt['readme'] = 'Readme';
+$txt['readme_error'] = 'Hata: Readme dosyası (%s) bulunamıyor!';
+$txt['replace'] = 'Değiştir';
+$txt['send_file'] = 'Gönder';
+$txt['theme_notice'] = 'Not: Temanızda bahsi geçen dosyaların olmaması problem teşkil etmez, (çünkü bu dosyalar yerine Default temasındakiler kullanılır).';
+$txt['title'] = 'SMF Paket Çözümleyicisi';
+$txt['type'] = 'Paket tipi';
+$txt['upload'] = 'Paketinizi yükleyin (ZIP veya TAR.GZ dosyası):';
+$txt['upgrade_error'] = 'Güncelleme işlemi şimdilik çalışmıyor!';
+$txt['uninstall'] = 'Kaldır';
+$txt['uninstallable'] = 'Kaldırılabilmesi';
+$txt['uninstallation'] = 'Kaldırma';
+$txt['upgrade'] = 'Güncelle';
+$txt['upgradeable'] = 'Güncellenebilir';
+$txt['upgrade_not_yet'] = 'Modun eski sürümünden güncelleme (henüz tamamlanmadı)';
+$txt['version'] = 'Paket sürümü';
+$txt['welcome'] = 'Hoş geldiniz!';
+$txt['welcome_full'] = 'SMF Paket Çözümleyicisine hoş geldiniz! Bu paket çözümleyicisi size bir SMF modifikasyonunu manuel kurmanız için tam olarak neler yapmanız gerektiğini göstermektedir. Tek yapmanız gereken modifikasyonunuzu (bir ZIP veya TAR.GZ dosyası) yükleyip gösterilecek adımları takip etmenizdir.';
+?>

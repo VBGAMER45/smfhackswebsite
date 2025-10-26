@@ -1,0 +1,1 @@
+window.galleryVersion = "10.3.1";

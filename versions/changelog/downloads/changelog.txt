@@ -1,0 +1,361 @@
+5.0.7
+!Fixed minor error log messages
+
+5.0.6
+!Removed || changed to OR in SQL statements
+
+5.0.5a
+!Fixed filesize edit bug when editing a file for SMF 2.0 going to zero when no uploads
+
+5.0.5
+!Fixes support for 7.4+ uninstall old version and install new version
+
+5.0.4
+!Remove create_function for PHP 7.4+ support
+
+5.0.3a
+!Fixes for remote filesize function more checks added.
+
+5.0.3
++Added support to get filesize of remote filenames
+
+5.0.2
+!Fixes for PHP 7.4
+
+5.0.1
+!Fixed download comments add post count setting for SMF 2.0+.
+
+5.0c
+! Fixed bug with importing from newer versions of TinyPortal
+
+5.0b
+!Fixed topic creation notification code SMF 2.1.x
+
+5.0a
++Updated for SMF 2.1.x
+
+5.0
++Added manage categories section in the admin area. To allow you to add/edit delete download categories instead of using the frontend
++Mark all Viewed button added to unviewed page
++Added mark unviewed option to downloads file page
++Option to display number of unviewed downloads items in the main menu
++Added options to hide stats link, search button, unviewed button, last post by on category
++Downloads you can now search with out typing anything to search for.
+!Added check on download to make sure the file id exists
+!Download permissions copy all don't show category that we are currently in
+!Stay in admin on file listing for members in admin section SMF 2.0.x
+!Fixed language string unviewed downloads
+
+4.1.11
+!Fixed showing hidden files from categories that have category level permissions set
+!Fixed showing hidden files on the stats page if you don't have permission
+
+4.1.10
+!Minor fix check that category exists for previous/next links
+
+4.1.9
+!Fixed some SSL resources for facebook/twitter not being on SSL
+
+4.1.8
+!Don't add new topic when approving download if there is already a topic for the download
+!Fix some formatting issues for auto posted topics
+
+4.1.7
+!PayPal IPN https updates required by Sept 30, 2016
+
+4.1.6
++Added option in credit system to make downloads that have been downloaded in the past not use any credits for future downloads
+
+4.1.5
++Added to RSS feed if you just use action=downloads;sa=rss gets the list of the 50 latest items
+!Fixed some missing alt tags on category images
+
+4.1.4
+!Delete temp file if not a valid picture file for disk space/security
+
+4.1.3
+!Fixed assertion failed error if editing file after batch add feature.
+!Fixed adding/editing download with {} in the description for SMF 2.0.x
+
+4.1.2
+!Fixed bug with topic description using picture description instead of the download description.
+
+4.1.1
+!Fixed bug with topic prefix not working if added as an option on a download category
+
+4.1
++Added add download link to top nav bar if you have permission to add downloads
++Added description to post being made on auto post to board setting on category level and also if the download is edited
++Added new gif resize class to work better with animated gifs
+
+4.0
++Added moderation logging to log key actions made by download admins in the download along with a Moderation Log area
++Added more stats to the stats page such as average comments per day, average uploads per day, total votes
++Added new downloads lastupdated index block and listall type 
++Added a search icon link on view download to show all downloads that a user has posted
++Custom Fields can now be added globally instead of just category level specific
++Added Facebook Like, Google+, Reddit as sharing options
++Now inserts keywords into SMF Tags if you have the smf tagging system installed
+!Fixed medium image post link for topic creation
++My files area sa=myfiles an now be accessed without passing a userid
++Added comment count next to comments on view download
++Added index to date,ID_MEMBER column on down_pic table for better performance when searching
++Updated some linktrees with more information/style
+!Fixed some moderation links in SMF 2.0.x on unviewed/listall
+!Fixed some undefined errors with related downloads SMF 2.0.x
+
+3.0.5
+!Fixed use download topic medium image setting
+
+3.0.4
+!Editing download now returns to the download category instead of MyFiles area
++Added option to use medium filename for post creation
+
+3.0.3
++Admin notification system for items waiting approval, and reported downloads/comments
+
+3.0.2
++Added a link to the discussion topic if there is a topic created for the download
+
+3.0.1
+!Fixed unviewed items bug only allowing downloads admins to view the page
+
+3.0
++Added unviewed downloads link in the menu bar to see which downloads you have not seen before.
++Added List All link to the main downloads page blocks
++Added related downloads to display on the bottom of each download page.
++Added Last download file link and post information on category/subcategory display
++Added checkbox approve/delete comments on the approve comments page
++Updated html markup style to improve display for SMF 2.0
++Alternate table row styles in different sections of the admin area to make it easier to read
++New setting to count member comments as posts
++Image thumbnail in main page blocks now links to the download
++Facebook meta data added when sharing downloads
++Better navigation links added in places around the downloads system
+!If medium image does not exist show the fullsize image
+!Fixed issue when changing the category in downloads system kept redirecting to the same category
+!Fixed searching in other languages using special characters
+!Fixed hardcoded Views text in delete download page
++Better Copyright Removal upgrade system
+
+2.1.12
+!Updated facebook sharing code
+
+2.1.11
++Added option to have a custom field shown on category view
+!Fixed undefined error on clear logs if you did not check any items selected to delete
+!Fixed download export logs for SMF 1.1.x
+
+2.1.10
+!Paypal IPN fixes for Feb 1, 2013 paypal update
+
+2.1.9
+!Fixed top downloads bar layout issue in chrome for SMF 2.0
+
+2.1.8
++Added export download logs feature
+
+2.1.7 
++Added better support for UTF8 languages
+
+2.1.6
++Added support for notify board option when creating a post for SMF 2.0
+
+2.1.5
+!Fix bug not showing custom fields if you change the category on add/edit download
+
+2.1.4 update
+Added setting "Duplicate downloads within 24hours do not use credits" under credit system settings.
+Thanks to davejo
+
+2.1.3
++Added setting to allow members to adjust the credits on their own downloads on add/edit download
+
+2.1.2
+!Fixed template name conflict with maintenance section of the downloads for SMF 2.0
+
+2.1.1
++Added setting to deny access to search engines to download file to prevent indexing/resource usage.
++Added setting for basic hotlink protection
+
+2.1
++Added new moderator permission for editing/deleting/approving downloads and comments. You need to do a new install for this to take affect.
++Added a maintenance area under Settings to purge files not downloaded in x amount of days
+
+2.0.6
++Added download credits as an option to multipart files. Download admins can specify when adding/editing a download the number of credits an extra file needs.
++Batch FTP option to import multiple files into a single download
+
+2.0.5
+!Fixed issue with receiving IPN payments in SMF 2.0. SMF added another security check that prevented guests from accessing SSI which also caused other scripts that include SSI as guest to fail.
+
+2.0.4a
+!Fixed spell check for IE8 for SMF 2.0.x
+
+2.0.4
+!Improved search results for multiple pages
+
+2.0.3
++New curriencies supported Brazilian Real,Israeli New Sheqel,Malaysian Ringgit,Mexican Peso,Philippine Peso, Taiwan New Dollar, Thai Baht    
+
+2.0.2
+!Fixed some button layout issues in IE8 and FF 3.6 for SMF 2.0
+
+2.0.1
+!Fixed additional membergroup/postgroup checks for category level permissions
++Added setting to enable rss feed icon to display on a categories
+
+2.0
++Added a setting to allow you to add additional files to a single download. You can control how many extra files are allowed.
++Added Facebook/Twitter sharing settings
++Added upload progress to monitor the progress of files being uploaded  shows number of bytes uploaded.
++Added an automatic rating function based on number of five star ratings to create a topic in a board of your choice
+!No longer show the rating form if you already rated the downloads
+!Fixed missing image for stats bar in SMF 2.0
+!Fixed bug with quota limits and filesize max filesize not going beyond 2GB
++Added option to disable highslide
+!Fixed undefined error on screenshot for download resize
++Added category column to search results
++Added option to copy category permissions from another category
+!Fixed some xHtml validation errors for SMF 2.0
+
+1.0.18
+!Fixed issue with MySQL 5.5 since it no longer supports the Type for create tables uses Engine instead
++Added support for additional membergroups for category level permission checks
++Added support for <br> <br /> tag in download title.
+
+1.0.17
+!For highslide make sure it is using the full url in case you are using url rewriting
+!Fixed delete category to remove all file data of deleted files
++Renamed a lot of download functions to avoid name conflicts with other modifications
+!Fixed uploading a filename with ' quotes bug
+!Enlarged the html/link codes text box. Fixed text for html link code on view download
+-Commented out post restriction code that hide categories on add/edit download and search since it was not working correctly.
+
+1.0.16
++Better improved curve style for SMF 2.0 RC3
++Added counting of unlimited subcategories for file totals
+!Post group permission change order for getcatpermission function
+
+1.0.15
++Added SMF 2.0 RC3 support
++Moved location of Downloads Configuration to its own spot in the admin for SMF 2.0
++Added display of max_upload_filesize and max_post_size php settings in the admin area these control how large files are accepted by your forum
+
+1.0.14
+!Fixed a bug tiny portal downloads if the category parent is null
+!Fixed bug for hiding of email addresses in users comments for SMF 2.0 RC2
++Added regenerate thumbnails option in the admin area
+!Fixed bug in image resize function using wrong constants for max width/height
+
+1.0.13
++Added an option under Layout Settings to Hide Subcategories underneath a parent category
++Added a setting to not count the same file twice if you are using downloads per day quota for membergroups
++Added option to decide if you want to send pm on giving a member credits or not
+!Fixed showing of categories in add/edit download category select and search select not respecting the user's minposts limit if set in the category
+
+1.0.12.1
+!Fixed error on give credits for SMF 1.1.x
+
+1.0.12
+!Fixed keeping the number of records per page when clicking a sorting column on download logs page
++Added preset download credits on a category level accessed by add/edit category. Sets the credits value for an upload on a category when the upload is added. Instead of using filesize/default credits settings
++Added option to add download credits when making a forum post
++Added option to give uploaders the credits of the file when a user downloads their file for the first time.
+
+1.0.11
++Added smarter rating ordering for mainpage block and order by rating
++After editing a category redirects back to that category
++Added User Credit List under the credit system which is a member listing of all members on the forum and number of credits and upload files they have.
++Improved the give credits page with additional wording on negative credits and disabling unlimited credit users
+!Fixed for SMF 2.0 missing give all members credits function
+
+1.0.10
++Added option under layout options to hide the download filename if you are using an image download button
++Added option under layout options to use medium sized image on download display instead of the thumbnail
++Added option to toggle thumbnails on file listing inside each category on a category level by add/edit category
++Improved category dropdown menu for add/edit category and add/edit download
+!Fixed spellcheck button SMF 2.0
+!Fixed bug with multiple keywords returning no results clicking the keyword link
+
+1.0.9
+!Fixed bbc editor in SMF 2.0 not working in IE6/IE7
+!Fixed who is viewing category/download to now show all members viewing that page
+
+1.0.8
++Added setting to set how many image upload fields to show on add/edit download page
++Added total downloads to the stats page
++Added highslide to the view picture page
+!Fixed unable to edit picture for SMF 2.0
+!Fixed adding credits integration for SMF Shop with SMF 2.0
+
+1.0.7
++Added more integration with SMF Shop. All functions now integrate using the SMF Shop's credit system instead of the downloads credits system. Requires SMF Shop to be installed.
+
+1.0.6
+!Fixed issues with updating user's filesizetable UpdateUserFileSizeTable for SMF 2.0
++Added on stats page top 10 downloaded files
++Added setting for category view to have the option to have a download link on that page which allows users to skip the main download page
++Added option for users to view their own download logs
+
+1.0.5
++Added default download cost setting
++Added support for Post Count Groups on category level permissions
++Added option to give all members on the forums credits at once
++Added option to give members unlimited credits
+!Fixing missing some permissions in the category permission list for guests and regular members
++Added setting to use a download image instead of download text. Included a sample download button image.
++Fixed mismatched resize setting for images/screenshots. 
+!Fixed update file quota information if the file's owner was changed on edit download
+!Hide the buy credits link if there are no credit packages defined
+!Fixed incorrect credit amount display on download page.
+
+1.0.4
+!Fixed a bug in the download in download access permissions in SMF 2.0 if you give another group such as global moderator access to the downloads admin area it would not let them access it.
+!Fixed a mix matched permission check in the credit system settings area
++Added option on the download logs page to choose the number of pages to display 10 to 100 is the range
+!Fixed sorting of subcategories on the main category page to be the order that you choose
+!Fixed a caching issue that could prevent some downloads from occurring and settings getting cached.
+
+1.0.3.2
+!Fixed redirection to image error page if there is an issue with the image when adding a download
+
+1.0.3.1
+!Fixed sorting download logs by membername in SMF 2.0
+!Fixed missing one more spot for checking if the message still exists if the download has a topic when editing a download
+!Fixed redirection to image error page if there is an issue with the image
+!Fixed issue with attempting to resize the uploaded image of the download
+
+1.0.3
+!Fixed bug using the filesize sort inside a category
+!Changed the ftp batch import to not show failed results if nothing failed
+!Fixed a bug on ftp batch import of a function not named properly for checking filesize
+!Fixed missing thumbnail on topic when approving a download
++Added sorting on the downloads log page
+!Fixed possible bug if a download topic was created then deleted and then the download was modified creating an error.
++Added settings to control the filesize amount a file is divided to determine the number of credits to add or subtract for an upload/download
++Added most downloaded download index page block
+!Fixed when editing a download if there is an error with the image that is uploaded redirects to image error page with the reason why it failed after the upload is edited.
++Added total download line in the main page blocks
+
+1.0.2
++Added posting of thumbnail of primary image of the topic that is generated
+!Fixed a bug in the Tiny Portal Import tool if the ratings field from TP was empty.
+
+1.0.1
+!Fixed undefined error in the admin area for SMF 2.0
+!Fixed bug when downloading a file if the credit system is disabled
+
+1.0 Initial Release of Download System Pro
++Added Credit System to downloads. Credits can be bought using paypal!
++Added settings to control download uploads
++Added topic prefixes option to forum topic creation on categories
++Changed paging function to use SMF's function
++Added Batch FTP option to allow easy importing of files
++Added manage categories to the admin area of the downloads system
++Added a setting to allow you to change the downloads section name
++Added a setting to control number of files displayed per row
++Added age based categories and minposts enter a category feature
+!Deleting a download now deletes the topic and editing a download now edits the existing topic
++Added member link color setting
++Added a seperate permission to download a file

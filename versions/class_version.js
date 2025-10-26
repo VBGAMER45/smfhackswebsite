@@ -1,0 +1,1 @@
+window.classVersion = "6.0";

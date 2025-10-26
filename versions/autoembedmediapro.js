@@ -1,0 +1,1 @@
+window.autoemdedmediaproVersion = "7.0.6";

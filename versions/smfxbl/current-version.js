@@ -1,0 +1,1 @@
+window.smfVersion = '0.1 Beta 3';

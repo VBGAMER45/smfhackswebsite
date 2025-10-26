@@ -1,0 +1,879 @@
+##############################
+Changelog for SMF Gallery Pro
+Most recent changes are first
+##############################
+9.0a
+!Fix for missing jquery for image editor addon
+
+9.0
++New image editor addon. Crop, Draw, Filter, Transform images and much more! For SMF 2.0.x and SMF 2.1
++Custom fields now show on bulk upload page. SMF 2.0.x and SMF 2.1
++Look and feel updates for SMF 2.1.x
+!Fixes for PHP 7.4+
+!Error message now displayed for failed multibulk upload pictures. SMF 2.0.x and SMF 2.1
+!Fixed .bmp thumbnail generation requires full uninstall then reinstall
++The gallery now stores the original filename of the uploaded file in the database and uses it when an item is downloaded. For SMF 2.0.x and SMF 2.1
++Added setting add/edit category to choose on category listing to show either thumbnail (by default), medium size, or full size media. For SMF 2.0.x and SMF 2.1
++Added auto rotation based on EXIF settings. If EXIF is enabled.
+!Fix performance for recent comments block added index for large galleries
+!Fixed a SQL error bug deleting a comment from the moderation section
++Searching now allows three character searching instead of greater than three
+!Improved the handling of deleting a gallery item topic. Will only delete the topic if it is the first post.  Handles and stores the post msg_id SMF 2.0.x and SMF 2.1
+!Fixed bulk picture select redirect for members with personal gallery permission disabled.
+!Trim audio/video url if spaces on end when adding/editing linked video/audio media
+!Fixed bug where search results could expose private/password protected media
+!Fixed changing category on add/edit video/audio with custom fields now forces a reload with the custom fields displayed. SMF 2.0.x and SMF 2.1
++Updated latest autoembed media sites
+
+8.0.8
+!Fixed move picture to different category dropdown on category display.
+
+8.0.7
+!Fixed bug in some cases not allowing a single file to be uploaded.
++Improved watermark handling keeping original files.
+
+8.0.6
+!Must Update. Fix security issue with Local/Remote FLV fusing player_flv_maxi.swf FLV Player.
+Have removed the option to play FLV videos. Make sure this file is removed gallery/videos/player_flv_maxi.swf from your forum
+
+8.0.5
+!Fixed bulk add link for user galleries when using the main menu
+!Removed aviary settings since Adobe ended the product
+
+8.0.4
+!Fixed undefined gallery_picture_id on who favorited page for SMF 2.1.x
+!Fixed undefined issue send pm online/offline buttons for SMF 2.1.x
+
+8.0.3
+!Fixed top button add picture select user gallery feature not working on some cases
+!Fixed on add picture error for user gallery to keep user categories loaded in SMF 2.0.x
+!Email notifications now add message-id header for SMF 2.0.x
+!When getting the tinypic url check that allow_fopen is enabled
+
+8.0.2
+!Do not allow downloads of linked video files
+!Mootools for image box is now supported over https://
+!Avairy image affects script now supported over https://
+
+8.0.1
+!Fixed bug with rebuilding related index with 's characters in the title
+
+8.0
++Improved sorting dropdowns in various areas now maintain the value that was selected.
++Added check all to comments waiting approval and images waiting approval in the moderation center
++Added unfavorite link when viewing myfavorites to unfavorite an item
++Added option to set the number of items per page on the List All pages.
+!Fixed style issue if not enough results to fill table leaving table across.
+!If ONLY_FULL_GROUP_BY is enabled in MySQL 5.7+ disable it for SMF 2.0.x
+!Fixed display of html linking codes for video the copy icon was off.
+!Fixed text on category select for add audio/video to say audio/video instead of picture
+!List files link in space manager for SMF 2.0 now stays in the admin section
+!Fixed Tag Cloud Header display for SMF 2.0.x
+!Addthis link made https
++Updated latest autoembed media sites
+
+7.2.4
+!Minor fixes for SSL for facebook/twitter sharing on view picture/media page.
+
+7.2.3
++Updated/fixed video link embeding for some video sites.
+
+7.2.2
++Added copy icon which auto copies sharing links when clicked.
++Added option when clicking add picture in gallery menu to select either a single picture or bulk
++Added link on category name in on bulk upload page
+
+7.2.1
+!Fixed bug with possible autoapproving permissions for category level permissions
+
+7.2
++Added autoapprove category level permission
++Added on search page option to search global custom fields
+
+7.1
++Brand new html5 bulk uploader with drag and drop support. Chrome 7+ Firefox 4+ IE 10+ Opera 12+ Safari 6+
+
+7.0.8
+!Fixed issue for video description not being taken in some cases for SMF 2.0.x and SMF 2.1 for special characters.
+
+7.0.7
++Added max filesize display under add/edit image and audio/video file upload field
++Added setting to disable showing of fullsize images in which only the medium image will be shown. This is found under Settings then "Picture Fullsize Display: " then choose the option nothing/Nothing/No Fullsize Image"
+
+7.0.6
++Added video rotation controls via for mp4, ogg, webfm files
++Updated video embeding regex's
+
+7.0.5
+!Delete temp file if not a valid picture file for disk space/security
+
+7.0.4
++Added mark all items as viewed button on the view unread items page
++Updated style classes for SMF 2.0.x SMF 2.1 to look better on custom themes
++Changed some wording language to highlight audio media supported as well
+
+For the wording/mark items viewed changes you need to do a full uninstall then install the newest version.
+
+7.0.3
+!Thumbnails for next/previous mini images now respect images that are marked as mature and will show a mature image picture.
+
+7.0.2
+!Fixed bug with "Post Image Upload" addon to SMF Gallery Pro to main user gallery and undefined keywords error log.
+!Fixed add video link == in main menu dropdown SMF 2.0.x and SMF 2.1 Beta 1
+
+7.0.1
+!Fixed db error when editing a user gallery category for SMF 2.0.x
+!Fixed undefined context['search'] for SMF 1.1.x on searching
+
+7.0
+
++Added support for SMF 2.1 Beta 1 now using hooks instead of file edits for most edits
++Added simple likes system picture system. Comes with settings to turn on/off for display and mainpage blocks. Also can view who liked which items.
++Added og:url, type properties for better social media sharing
++Added fulltext search setting option to allow more complex searching
++Added number of images per page session level setting for all paging areas in the gallery. And option to choice items per page when inside gallery categories
++Added RSS feed icon link inside category next to title
++Added Comment RSS feed links on media item pages
++Added setting to count picture uploads/media as a forum post
++Title of image in block areas and image listing areas now links to the image
++Removed database queries from templates files for SMF 2.0.x
++Optimized data loaded on comment display for member information
++Added last seven days to searching system as an option
++Added two new search options media type and gallery type
++Added mark unviewed button to the view item page
++Added a quote comment link on comments page next to each comment which allows quoting of the comment
++Commas supported as keyword delimiter in addition to spaces. If comma is detected keywords will be split by comma instead of spaces
++Added sort and order by on search page and on search results you can change the sort and order and number of items returned per page
++Added membergroup colors to the user gallery member listing page
++Now includes keywords as hashtags in tweets if tweeting is enabled in the category
++Added submenu buttons for the main Gallery menu item for SMF 2.0.x and SMF 2.1.x
++Added setting to disable member color link
+!Fixed getting youtube screenshot for certain video urls
+!Raised memory limits from 128mb to 256mb for gallery operations to handle larger files.
+!Fixed bug in menu item for SMF 2.0.x not showing unviewed media items if that option is enabled. Requires uninstall old/install new to take affect
+!Fixed xhtml validation issue on main page blocks/image listing area SMF 2.0
+!Fixed not tweeting items when approved if they were unapproved for SMF 1.1.x
+!Do not load twitteroauth class if already loaded by another mod
+!Removed the bottom text links on the view item/picture page for SMF 2.0.x everything. All options are accessed via the top bar above the item now.
+
+6.7
++Added new gif resize class to work better with animated gifs
+
+6.5.5
+!Fixed the category permission page. Not showing both guest/regular permissions if you had both added for category
+!Added extra check for addrelated pictures where it could fail.
+
+6.5.4
+!Fixed bug with editing video updating the screenshot for embeded media
++Latest Simple Audio Video Emdeder video sites/updates added
+
+6.5.3
+!Fixed undefined errors if going from lite to pro with different view picture urls.
+
+6.5.2
+!Fixed bug with user gallery recent blocks in SMF 2.0.x not working
+!Fixed not showing custom fields that were left empty on edit picture/video
+!Member watch notifications if deleted member skip it.
+
+6.5.1
+!Fixed Google+ and Pinterest not sharing the correct url
+
+6.5
++Added moderation logging to log key actions made by gallery admins in the gallery along with a Moderation Log area
++Added alt tags on image listing areas in the gallery using the title of the image
++Youtube external videos now pull in an image from youtube for the video preview image
++Custom Fields can now be added globally instead of just category level specific
++Custom Fields can now be edited
++New sharing options added for Reddit and Pinterest 
++Now inserts keywords into SMF Tags if you have the smf tagging system installed on topic posting
++Updated top userbar tabs in the gallery code optimized
++Unapproved comments now visible to admins/comment owners when viewing a picture/video
++Added index to date column on gallery_pic table for better performance when date searching
+!Fixed bug with uploading videos failing if no preview picture included.
+!Fixed SMF Shop points not added on bulk upload
+
+6.0.5
++Upgraded Stats page more types of stats now shown. Including total votes, top raters, top categories, average pictures/videos added per day, average comments added per day
+!Improved the look of the SMF 2.0 stats page
++Comment display now includes the total number of comments next to Comments on view picture
+!Improved display of quick reply for SMF 2.0
+!Fixed bug on edit video for SMF 2.0
+
+6.0.4
+!Fixed total comments,total views totals on myimages page they were swapped
+!Code cleanup moved most of the mini images displays to ShowImageItem found in gallery.template for SMF 1.1.x and Sources/Subs-Gallery2.php for SMF 2.0.x
++Added option to disable video uploads. Just in case you only want to allow linked videos
+
+6.0.3
+!Fixed not showing stats of a gallery user to guests when viewing their myimages section.
+!Fixed missing title/rating information on myimages/search results page.
+!Small keywords 2 characters or less no longer displayed
+
+6.0.2
+!When adding a video/audio file a file or link is required can no longer add nothing
+!Fixed loading of linked videos that start with https://
+!Missing addvideo link in SMF 1.1.x in user galleries in the top nav bar
+!Fixed tweet items undefined error for adding video in a user gallery
+!Fixed undefined error on add video if not uploading a preview screenshot.
+!Fixed issue with bulk uploader in chrome returning an error even though picture was uploaded
+!Make sure keywords/tag cloud updated on each case for edit picture/video
+!Prevent saving keyword of two or less characters from being entered if separated by a comma won't be saved in tag cloud
+
+6.0.1
++Added setting to disable viewing full detail page of image if not registered
++Added category level permission to disable viewing full image details
++Added non fatal errors for add picture for SMF 1.1.x same as SMF 2.0
+
+6.0
++Video Addon now built into SMF Gallery Pro -
+Upload formats supported: avi,flv,mov,mpg,ram,rm,rpm,swf,wmv
+Supports YouTube and some other common embed video sites. Supports links such as http://www.youtube.com/watch?v=EDIP71Lviys
+Can have a user uploaded thumbnail if none is specified uses generic video image
+Settings to set the max file size, player height, player width, show download link, show html linking codes
+Membergroup/category level permission to control which group can upload videos.
+
++Not filling in all the information/errors on add picture/add video page no redirects back to the page with information already filled out instead of a fatal error. SMF 2.0 only.
++Added user information to the myimages page. Stats include total pictures,comments and views total
++Added setting to redirect back to the category instead of the users myimages page by default
+!Admin email notifications/tweet clean up single quote display
++Some linktree tweaks in a couple places display/style improvement
++Template/style tweaks throughout the gallery.
+
+5.0.10
+!Fixed tweeting of gallery items issue due to twitter api change
+
+5.0.9
+!Fixed some permissions with the myimages link showing all users pictures instead of just a certain user.
+
+5.0.8
+!Fixed some possible undefined errors when adding a picture
+!Fixed two image file locations for lightbox picture viewer as long as you have gallery folder named gallery
+
+5.0.7
+!Fixed bug with search all images from member icon on view picture showing images from galleries the user does not have access to.
+
+5.0.6
+!Fixed top add video link had wrong permission name. For the SMF Video addon for SMF Gallery. To update uninstall the Video Addon install the new version of SMF Gallery then install the Video Addon again.
+
+5.0.5
+!Now check to make sure the category exists if you attempt to view a non existing category will though an error.
++Added option to search all photos no longer requiring entering anything to search in the search system.
++Added arrow key movement for previous/next buttons
+
+5.0.4
+!Fixed updating last post on a category when moving a picture from one category to another category on the category display area.
+!Fixed link on view picture to show approve/or unapproved link depending on approval status SMF 2.0
++Added a setting to disable deleting the topic if you using the post to topic feature on a category
+
+5.0.3
+!Fixed searching with special characters in other languages
++Better support for other character sets in SMF 2.0
++Added add category link to the top of the manage categories page
+!Fixed previous image link now working correctly
+!Twitter sharing now url encoding the title of picture that is shared.
+!Facebook image meta tag description and title now encoded.
+
+5.0.2
+!Fixed bug with the edit own picture category level permission
+!No longer show the edit picture link and delete picture link if category permissions deny it.
+
+5.0.1
+!Fixed paging in listall pages
+!Fixed missing text strings on gallery twitter settings page.
+!Fixed login bug for twitter
+
+5.0
++Added Auto Tweeting main category setting for items posted in a category
++New image effects system.  Effects including the following: Blemish, Brightness, Contrast, Crop, Draw, Effects, Enhance, Orientation, Redeye, Resize, Saturation, Sharpness, Stickers, Text, Warmth, White 
++Added setting to create a default personal category gallery for a user the first time they visit the gallery
++Added notification system for gallery admins on pictures waiting approval,  comments waiting approval, reported comments and pictures.
++Added checkboxes for gallery admins on image listing page to do bulk operations such as delete, unapprove, move images.
++Total Favorites and who favorited added to the view picture/media page if you have the favorite system enabled
++Added member group color links to many areas of the gallery
++Added gallery navigation bar/tabs to report picture, report comment, view ratings, and view viewers pages
++Added Facebook Like Button as a sharing option on the view picture page
++Added option to search exif make and model
++Added new setting on add/edit category to post to a specific topic when enabling the autopost features for a main category
++New setting to count member comments as posts
++Alternate table row styles in different sections of the admin area to make it easier to read
++Added checkbox approve/delete comments on the approve comments page
++Updated html markup style to improve display for SMF 2.0
++Better Copyright Removal upgrade system
++Added Add Video Link the top gallery tabs if you have the video addon installed
+!Fixed paging sorting on the user gallery list page
+
+4.0.10
+!Updated the facebook sharing code to a different format to fix issues since facebook changed how sharing works.
+!Fixed some possible errors with the download item feature
+
+4.0.9
+!Fixed deprecated function call in watermark for text
+!Fixed mysql error on sorting by rating inside a category
+
+4.0.8a
+!Adjusted rating average on main category sort view
+
+4.0.8
+!Top Rated blocks now go by ratingaverage desc, totalratings desc
+
+4.0.7
+!Fixed main gallery menu in chrome was bunched. Now aligned on the left handside
+!Fixed listall to use (p.rating / p.totalratings ) AS ratingaverage  for the sort order
+!Fixed possible error log with th exif read data function
+
+4.0.6
++Added download item option under Admin -> Settings -> Layout Settings
+
+4.0.5
++Added option under layout settings to view unviewed items in the menu button/tab
+!Fixed bug with category totals/changing post content on edit picture.
+
+4.0.4
++Added support for Badge Awards http://www.smfhacks.com/badgeawards.php  checking on add picture/comments
+!Fixed possible undefined error on search page that can be caused by search engine spiders
+!Fixed bug with related images going too wide if set more than four. Now creates a new row.
+!Better support for other character sets for adding a picture tag
++Added title option to recent blocks/image listing uses the layout setting to show or not
++Added support for notify board option when creating a post for SMF 2.0
+
+4.0.3
++Added settings to control picture min height,width
+
+4.0.2
+!Hide the addpicture/bulk upload links on category view if permissions do not allow it.
+
+4.0.1a
+!Fixed missing space in bbc code when approving an image that posts to a board in SMF 1.1.x
+
+4.0.1
+!Fixed bug with bulk uploader not working with files other than zip broken in last update
+
+4.0
++Added related images feature to the gallery. Allows you to set the number of related images to show underneath the image description area on view picture.
+!Fixed broken thumbnail in RSS feeds in SMF 2.0
+!Fixed division by zero bug in case of bad exif data
+!Bulk uploader now uses filename for title if no title given.
+!Fixed permissions for images shown in the listall areas respects category level permissions
+!Fixed previous/next links when using a custom sort order for a category
++Added facebook sharing meta data to share description, title, and thumbnail image
++Added support for a gallery pro addon to add an upload to gallery link inside a message post
+!Fixed updating latest posted picture gallery option on image approval for SMF 1.1.x
++Added Add Picture and Favorites link to menu in SMF 1.1.x
++Improved the add picture link in the menu
++Updated the facebook sharing code
+!Better performance for the recent commented pictures block
+!Fix duplicate gallery link in linktree for user galleries SMF 1.1x
++User Galleries now have the last post feature the same as main galleries if you have that setting enabled
++Added RSS links to user gallery categories if you have RSS enabled
+!Fixed undefined error for top tabs on user gallery delete category SMF 2.0
++Updated main javascript frameworks
++Added Google+ sharing option on view picture
++Added processing of zips in bulk upload requires zip extension/builtin with php
+
+3.0.25
+!Fixed not showing thumbnail in SMF 2.0 with RSS Feeds
++Added visual verification on add comment page and quickreply for guests to help with spam issues.
+!Fixed undefined redirect varaible in SMF 2.0 
+
+3.0.24
+!RSS Feed icon was not showing in SMF 2.0 when you enabled RSS Feeds under settings
+
+3.0.23
+!Fixed bug in multibulk uploader not working in IE9
+
+3.0.22
+!Fixed manage categories sub category display adding a numeric value after the category title
+!Deleting category level permission now takes you back to the category level permissions you were on instead of category permission list
++Improved add picture menu link to pass the category if you are on a category page
+!Fixed regenerate thumbnails,medium sized images for normal categories
+
+3.0.21
++Added Add Picture link in the main gallery toolbar
++Added upload limit per day setting
+
+3.0.20
+!Fixed bug if caching enabled showed hidden pictures on index page blocks
+!Using php date function instead of smf's internal time format to format exif original date time taken
+!Removed the calculation for fstopnumber now using the internal computer value if present or empty using the original fstopnumber without the calculation
+
+3.0.19
+!Fixed a bug if selected copy image to another category when you uploaded a picture and had no zero user categories and had normal categories would not let you copy the picture and vice versa.
+
+3.0.18
+!Fixed bug setting quota limits over 2gb
+!Fixed bug if you only had sharethis sharing enabled it would not show on view picture display
+
+3.0.17
+!Fixed formatting for twitter share button for spaces in picture title
++Added new share button for addthis
+
+3.0.16
++Added some GPS exif support
++Added support for LensType,LensInfo,LensId
+
+3.0.15
+!Increased the description size in the database for user gallery categories to allow longer gallery descriptions
+!Fixed spelling check for IE8 in SMF 2.0
+!Fixed changing picture owner if picture was in an user gallery category
++Updated some exif display fields on how they are displayed fstopnumber,shutterspeed, and focal length
+
+3.0.14
+!Fixed missing file on multi image bulk uploader due to the file being removed from the remote hosting on github
+!Fixed possible undefined error for exifdata processing
+
+3.0.13
+!Changed/fixed how multiple pages are handled for search results
+
+3.0.12
+!Fixed getting the correct image width/height if the image has been resized if it was too large
+!Fixed on view picture if medium images enabled do not attempt to resize the picture though html
+
+3.0.11
+!Fixed bug not showing reported comments reported by guests
+!Extra check for permissions on bulk upload for user categories
+!Fixed duplicate issue with the multibulk uploader
++Picture totals now count for all levels deep for sub categories on the main gallery
++Added setting to hide last modified by on comments
+!Don't show the max width,height on edit picture if you have resizing enabled
++Renamed some exif text strings and changed the order on a couple fields on view picture page
+
+3.0.10
+!Fix db error for list all for recent comments for SMF 2.0
++Redid how category permissions to handle additional groups
++You can now setup category level permissions for post based groups
++Added more linking settings now with bbcode for thumbnail and medium sized image
++Added setting to move picture information after comments
++Added setting to allow you set the batch add path
+
+3.0.9
+!Fixed primary key on viewed items log which caused view logs not to be written correctly.
+!Fixed SQL query on unviewed items page to show items currently if user galleries have passwords/marked private
+!Fixed regenerate thumbnails for normal categories broke with last update
+
+3.0.8
++Added support for SMF 2.0 RC4
+!Added GROUP By to search results query to fix duplicate images
++Gallery admins can now change the picture owner of user gallery images
++Manage categories now lists total images for user galleries
+!Fixed bug in thumbnail/medium image regeneration when importing from other gallery software if the images are stored in sub sub folders
++You can now regenerate thumbnails,medium sized images for user galleries via manage categories
+
+3.0.7
+!Fixed undefined json_encode in older version of PHP used for multibulk uploader
+!Fixed missing image for stats bar in SMF 2.0
++Added setting that allows users to control if they want their pictures rated or not
+!Fixed bug with user galleries not allowing mark of adult content on add picture
+!Fixed bug with user galleries not storing medium size picture on add picture
+
+3.0.6
+!Fixed twitter share link to work with PHP4
+!No longer show the rating form if you already rated the picture
+!Fixed bug if image needed to be resized in not saving the EXIF information on the photo on upload
+
+3.0.5
+!Fixed potential duplicate images showing up in certain locations of the gallery
+!No longer logging error if no rating is selected on rate picture
++Added more checking for request for saving/deleting picture notes to reduce logged errors
+
+3.0.4
+!Fixed issue with MySQL 5.5 since it no longer supports the Type for create tables uses Engine instead
+!Removed Twitter Login box on view picture page feature due to twitter discounting support of their post api
++Added setting to disallow certain extensions types from being loaded into the gallery
+
+3.0.3
+!Missed loading ad seller pro integration for SMF 1.1.x
+!Fixed Slideshow missing controls for SMF 2.0
++Added setting to show full quickreply with bbc code and smilies
+!Fixed colspan for blocks on index page of gallery was hardcoded to four
+!Fixed bug with Add comment for SMF 2.0 using WYSWIG mode
+
+3.0.2
+!Fixed for category thumbnails use correct resize limits for the category height/width settings
+!Fixed autothumbnail feature on view image not respecting category image limits and now resizes them
+!Fixed text on view picture page for html link code
+!Fixed issue with medium images if for some reason the medium filename of image is not blank but does not exist will now use the fullsize image
++Put the members galleries parent category back in the manage categories admin area.
+
+3.0.1
+!Fixed bug with editing keywords could cause sql error
++Updated highslide to use more absolute urls for graphics directory/some slideshow images
+!Fixed undefined template layer error with saving/deleting notes for SMF 2.0 
+!Fixed regenerate thumbnails for SMF 2.0 not passing category id after refresh to next portion
+!For photo tagging restricted just to the photo area so works better with different resolutions
+
+3.0
+
++Added new indicators underneath each picture if it is unviewed
++Added multifile upload option for bulk uploads
++Added feature to copy an image to other categories/personal galleries
++Added tagging of areas of pictures that are uploaded
++Added simple favorite image system for users to store a list of favorite images
++Added tag cloud option on main page along with tag cloud settings
++Added layout setting to show mini thumbnails above the image for next,current,previous images
++Added latest gallery post on category list view option
++Added Facebook/Twitter share and publishing settings
++Added autothumbnail function to auto create a thumbnail for a category's icon
++Added integration with AdSeller Pro adds four new ad locations
++Now under settings display your php limits for uploading files
++Caching added for blocks and other areas of the gallery if you have caching enabled in SMF
++Added Discussion Link on the view picture page if there was a topic created for the picture
++Moved the location of Gallery Settings in the admin area for SMF 2.0 for better support for gallery moderators
++Added option on add category for main gallery categories to copy permissions form another category
++Added indexes to key columns for the gallery to help improve performance
++Improved the rating sorting on top rated under stats and the main page block for top rating
++Redid regenerate thumbnails to use a progress bar system to do portions of images at a time
++Improved category list on the search page
++Redid the display for filesize to use the size that is closest instead of always using kilobytes
++Updated the table display for better support for SMF 2.0 RC3
++Updated the xml feeds to support the type option which allows either rss or xml and added the limit option for the number of items to show
++Added an option to hide sub category links under the main parent category
++For the video addon added a new category level permission called add video
++Settings and layout area now use alternate row colors to separate the settings better
+!Redid the delete category function to make sure all data is properly deleted
+!Fixed add category SQL bug a table alias was capitalized when it should not have been in the where clause.
+!Fixed deleting a reported picture redirects back to approval list
+!Fixed hiding of emails for SMF 2.0 RC3
+!Fixed some duplicate linktrees in SMF 2.0 RC3
+!Fixed some xhtml issues with missing alt tags
+
+2.5.7.2
+!Sarfari view picture/admin settings display fix
+
+2.5.7
++Improved the category select dropdowns for the gallery. Better organized
++Added interface for setting to control the number of images per row
++Added option to regenerate medium thumbnails
+
+2.5.6
++Added support SMF 2.0 RC2 default theme
++Added another index on id_picture on viewing a picture 
+
+2.5.5
+!Fixed when viewing non existent pictures not to log an error
+!Fixed database error for spiders following old previous/next links
+
+2.5.4
+!Fixed not deleting the medium sized image when deleting a picture
+!Deleting image also deletes the exif data in the database now
+!Fixed spelling of lightbox for SMF 2.0
++Improved the redirects when adding/editing/delete picture to return to your previous location
+!Lightbox and no highslide options now respect the current display image size properties
+
+2.5.3.1
+!Missed one bbc editor description field name for SMF 2.0
+
+2.5.3
+!Fixed bbc editor in SMF 2.0 not working in IE6/IE7
+!Fixed who is viewing for user galleries
+
+2.5.2
+!Fixed bug with lightbox not using correct path to load css/javascript files
+!Fixed a couple xhtml issues
+!Fixed incorrect up/down movement when changing custom fields order
+!Upgraded HighSlide from 4.0.6 to 4.1.5
+!Fixed relative path for highslide which could cause it not to load
+!Fixed who is viewing picture/category only showing one member
+!Fixed sort order on recent comments block.
+-Removed custom field searching due not working on some servers
+
+2.5.1
++Added setting to not show members on the user gallery list if they have no pictures in their user gallery
++Added setting to hide user avatars on the user gallery list
+!Member notifications not sent to users who watched a member
+!Fixed hiding of rotation on the add picture page if your hosting does not support the imagerotate function
+
+2.5
++Added top gallery posters, and top gallery commenters to the stats page
++Added option for user galleries for members to add a featured block of featured pictures
++All members now listed in the user gallery list. Added settings to control default sort order and number of members per page
++Added Random Images Block for Main page
++Added Recently Commented Images Block for Main Page
++Added option to watch/notify when a user posts a new image which causes an email alert to be sent. Includes watch list to see who you are watching and whos watching you!
++Added option to send tweets via twitter on the view picture page using curl
++Added option to rotate an image by number of degrees
+!Posts no longer auto approved if they come from a bulk upload 
++Added user's avatar to the user gallery listing
++Added feature to copy permissions from other categories
++Added option to edit category level permissions
++Added column to smf_members table to keep track number of pictures each user has uploaded.
++Optimized the Gallery add indexes to a couple of the columns in the gallery_picture table
++Added setting to control the number of images show on the main index page blocks
++Added option to search custom fields
++Changing of a category on add/edit picture now redirects to show any custom field options if present
++Added help links in various places in the gallery
++Added select category on add picture if the user came from no selected category
++Added a comma separator in between subcategories on the board index
++Added BBC editor to adding/editing pictures and adding/editing categories
++Editing a picture now also updates the associated topic if the gallery made one
++Deleting a picture also deletes the associated topic if the gallery created one
++Improved the next/previous links to only show if there is another picture/image
++Added unlimited level deep link tree sub category links
++Added checking for the view picture page for gallery category level checking of the add comment/quick reply fields only shown if they have comments enabled for that field
+!Fixed a bug with posting topic in SMF 2.0 extra \n\n added to topic body
++Optimized getting picture totals a little bit
++Moved css, js and images folder to the gallery folder
+!Fixed bugs with SMF 2.0 using the WYSIWYG editor
+!Fixed a couple cases were xml or rss feeds could fail
+
+2.0.5
+!Fixed bug getstarsbypercent that could occur in some conditions
+!Fixed bug with unviewed images which caused pictures not be tracked
+
+2.0.4
+!Fixed issue with comment scrollbars appearing for larger avatars.
+!Fixed issue with editing pictures (changing category) if they uploaded to a user's gallery using another account.
+
+2.0.3
+!Fixed an issue with handling of uploaded images. An image could be crafted
+
+2.0.2
+!Fixed error if exif enabled and reading file types that don't support EXIF.
+
+2.0.1
+!Fixed a bug on main gallery page image blocks which could cause repeated images.
+
+2.0 Initial Release of SMF Gallery Pro 2.0
+
+
+1.4.5
+!Fixed a bug with unviewed images which caused some images to be viewed and not tracked
+
+1.4.4
+!Fixed issue with comment scrollbars appearing for larger avatars.
+!Fixed issue with editing pictures (changing category) if they uploaded to a user's gallery using another account.
+
+1.4.3
+!Fixed an issue with handling of uploaded images. An image could be crafted
+
+1.4.2
+!Fixed a bug on main gallery page image blocks which could cause repeated images.
+
+
+1.4.1
+!Fixed bug generating watermark for medium sized images.
+
+1.4.0.3
+!Fixed bug with themes that do not have tabs. Checks if they have tabs enabled if not just uses text links
+
+1.4.0.2
+!Fixed a bug with User Galleries list for people with older versions of MySQL
+
+1.4.0.1
+!Fixed bug with EXIF processing input validation.
+
+1.4
++Added simple slideshow feature. Starts at the current picture and does up to 50 next images in the category.
++Added RSS feeds for main gallery categories controlled by a setting
++Added setting to control the number of bulk upload fields
++Added an unviewed images tab to the gallery. Where you can view images that your account has not viewed yet. Admins can also see who viewed what picture
++Added spam protection for comments and picture adding and now checks for duplicate form submissions.
++Added builtin support for lightbox. Option to use Highslide, lightbox or neither
++Improved the comment display under view picture to include more information on the commenter
++Added Blocks for User Galleries. Most Recent, Most Viewed, Most Commented, and Top Rated
++Added option to use total point totals
++Added sorting options for categories in user galleries
++Added EXIF support which allows you to get information from images taken with cameras. It is a setting that can be enabled and you can customize what EXIF information you wish to show on the view picture page.
+!Fixed a bug that showed thumbnails on blocks were users did not have any access to
+!Fixed issue with headers for some pages that had custom html_headers all ready set such as tp shoutbox.
++Added option on import pictures to delete the original file on successful import
++Added setting to generate a medium size image
++Added setting to flag images as mature/adult content
++Added settings to disable user gallery passwords and private galleries
++Added locking of categories to disable new uploads and editing of uploaded files
++Added a setting to require a comment for ratings. Also if enabled shows the rating next to the comment date
++Added a setting to count only views on image only once per session
++Updated Gallery layout on many of the pages.
++Added under settings the current version of the gallery and checks to make sure it has the latest version.
+!Fixed a bug when importing files via import function or bulk ftp function did not escape the filename
+!Fixed a bug which allow create a category and set the parent to be the member's gallery
+!Fixed a bug with gallery category totals when moving a picture from a user gallery to the main gallery and vice versa
+!Removed old SMF 1.0.x functions
+
+1.3.23
+!Fixed a bug that caused a javascript error when viewing a picture if you had highslide disabled.
+
+1.3.22
++Added subcategory link display under the parent category for user galleries
+!Fixed removed an extra div tag that was unneeded in the view picture page.
+
+1.3.21
+!Fixed an issue with the category permission list not displaying all permissions.
+
+1.3.20
+!Fixed bug with blocks not showing the correct information for galleries that were private/password protected.
+
+1.3.19
+!Fixed a bug with regenerating thumbnail sizes if are you using the multiple folders for storage option.
+
+1.3.18
+!Fixed a bug that allowed you to move a picture from a user gallery to root member galleries folder which is not allowed.
+
+1.3.17
++Added support for transparent watermarks. Grabs the pixel at 1,1 and uses that as the transparent color
+
+1.3.16
+!Fixed issue if a member deletes their account their personal galleries were not able to be viewed.
+
+1.3.15
+!Fixed topic creation options for importing pictures. Was not locking and showing post links.
+
+1.3.14
++Redid the mange categories page to make it more friendly and easier to see subcategories
++Changed keyword search results a little
+
+1.3.13
++Added pages to the user listing and added another column with the total images.
+!Now allows bulk uploading into member galleries by admins
+
+1.3.12
+!Fixed an XHTML validation error a closing tag was missing for non admin's
+!Fixed an issue with recent images not showing up that were located inside user galleries
+
+1.3.11
+!Fixed the subcategory display on underneath parent categories to be in the correct order.
+
+1.3.10
+!Fixed issue with display settings in the list all function not respecting the gallery settings
+
+1.3.9
+!Fixed an issue with creating posts when adding pictures using the bulk upload form.
+
+1.3.8
++Added list all on the stats page for commented, top rated, last upload, and most viewed images.
++Changed how page numbers are generated to use SMF's built into function.
+!When editing a category no longer allow the parent category to be the same category that you are editing.
++The total images for all user galleries now shows up on the main gallery page.
+
+1.3.7
+!Fixed a couple permissions errors when moving galleries for gallery admin's.
+!Removed the member galleries category from the batch ftp add page
+
+1.3.6
+!Fixed requiring bulk uploads to have title's for non gallery admin's.
++Added setting to disable highslide javascript function
+!Fixed issue when editing picture of user galleries it would update the wrong category column
+!Fixed issue with image blocks for user galleries for nonprivate photos.
+!Fixed a bug with watermarks that stretched the watermark to the entire size of the image
+!Fixed a bug with image category counts when moving an image in a user gallery
+
+1.3.5
+!Fixed thumbnail/resize generation if file is not a png will now generate a jpg to help save space.
+!Fixed bug with sorting and ordering of a category
+!Fixed a memory limit issue which was limiting some images to uploaded since they were too large and fixes a bulk upload issue.
+
+1.3.4
+!Hide the private/password photos from the recent blocks
+
+1.3.3
+!Fixed bug with reordering categories inside user galleries
+!Fixed picture totals when you change a picture's category
+
+1.3.2
+!Fixed bug with deleting pictures in user galleries was checking permissions from normal galleries.
+
+1.3.1
+!Fixed bug with adding comment in user galleries was checking permission from normal galleries
+!Fixed a bug to change permissions on the created thumbnails that affected some servers.
+
+
+1.3
+!Redid the picture counting should be faster for larger galleries
++Added subcategories picture totals counting for user galleries
++Added total picture count to the stats page
+!Changed how user galleries are shown on the gallery index
+!Changed moving categories up and down redirects back to parent category
++Added setting to show title on thumbnail listing
+!Fixed undefined error when editing a comment
++Added SMF Shop integration allows points for adding pictures and comments
++Added image linking codes on picture display
++Added User Gallery Settings. User galleries can now be made private or password protected.
+!Fixed category display settings for User Galleries
+!Fixed allowing people to add to the main root folder of the member galleries when they should not have access to that folder
++Allows guests to upload pictures to the gallery. Also fixes bug if a member deletes their account will still show the pictures
++Added custom fields for main gallery categories. Allows custom fields on picture display to be shown and asked for when they add a picture. Supports required and optional fields
++Search results now are displayed with multiple pages
++Added click to expand images on main image view. Also two settings to control max image size shown on the image view
+!Fixed user gallery image category for uploaded category images
++Added subcategory link display under categories
++Categories if no permission to view the category they will now be hidden
++Added searching by member name and date range
++Switched to using imagettftext for text watermarks instead of imagestring gives more control over the font and fontsize. Also watermark image will now resize if the image is too large or too small.
++Added setting to allow creation of folders in the main gallery folder for every 1000 thousand photos a new gallery folder is created.
++Added option for gallery admin's when editing a photo to move it from a user gallery to a main gallery. Or from a main gallery to a user's gallery.
++Added option to lock the topic and show link to gallery if you are creating posts for the category
++Added spellcheck for quick comment option
++On category view for pictures added option for users to sort images by criteria
++Added default sort order settings by category
+
+
+1.2.2
+!Fixed bulk uploading only allowing five uploads at time.
+!Fixed previous and next image links in user galleries they now work correctly.
+!Fixed deleting user categories which would show a permission denied error.
+!Changed keywords field in gallery_pic table to allow null.
+
+1.2.1
+!Fixed notifying yourself to your own reply if you post a comment.
++Added bulk uploading options for User Galleries
+
+1.2
++Uploading of category image icon's and settings for category images.
++Changed all redirect calls to redirectexit for better support for bridges
++File Quota information now displayed on add, edit, bulk uploads for pictures.
+!Fixed uploading files greater than max filesize if resized image option is turned on
++Added an option to display child subcategories picture totals for one level on the parent category.
++Added error display for bulk uploads to show what images failed and why.
+!Fixed some user gallery urls with category image urls.
++Added Guest comment support. Guests can now leave comments on pictures
+!Fixed category reorders if category is moved to another parent
+!Fullsize category image post now respects SMF image size limits in posts.
++Added Quickreply option for comments
++Added Picture Display settings.
+!Fixed remote avatar image on comments.
++Added watermark settings - allows watermarking on fullsize images
++Added regenerate thumbnails by category
+!Fixed search template.
+!Fixed undefined error in User Gallery if no category present
++Added option to change the picture owner on edit picture
++Added checkboxes to approval list for bulk approve and delete.
++Added thumbnail of image on add/edit comment page.
++Added setting to show the blocks on top of the gallery index or bottom.
+
+1.1.2
++Added Bulk Upload Permissions which allow them to be used by other membergroups.
+
+1.1.1
++Added Guest Category permissions
++Thumbnail settings affect the main gallery index blocks
+!Fixed a couple bugs including comment category permission, and some undefined variables.
+
+
+1.1
++Added settings for category image listing on what information to show with thumbnails
++Rating information now uses stars instead of %
++Added Next Image / Previous Images links on view picture
++Added User Galleries
+!Fixed page title on main gallery index
++Added category level permissions for viewing, adding picture, editing picture,
+deleting picture, and adding a comment
++Added option to picture to notify if comments have been posted
++Added button to approve all comments
++Added option to disable rating on a category level
++Subcategory's added. Unlimited levels
+!Fixed embarrassed smiley showing on add and edit comment form in SMF 1.1 RC3
++Added option to resize images if they are larger than the max allowed
+!Fixed date and filesize on edit picture and delete picture for the image view
++Added category search on search page
++Added page listing for comment approval
++Added category on approval listing
+!Rating display rounded to two places if it is decimal
+!Fixed most commented pictures order in the stats page
+!Stopped rating of your own image
+!Fixed posting new topic for category in SMF 1.0.x
+
+1.0 Initial Release of SMF Gallery Pro
+
+
+Legend
+! Bug Fix
++ New feature

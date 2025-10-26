@@ -1,0 +1,1 @@
+window.rssfeedposterVersion = "3.0";

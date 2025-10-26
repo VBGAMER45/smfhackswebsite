@@ -1,0 +1,1 @@
+window.wiki_latest_version = "1.0";

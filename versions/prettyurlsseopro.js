@@ -1,0 +1,1 @@
+window.prettyurlsVersion = "2.1";

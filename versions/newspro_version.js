@@ -1,0 +1,1 @@
+window.newsproVersion = "4.0beta";

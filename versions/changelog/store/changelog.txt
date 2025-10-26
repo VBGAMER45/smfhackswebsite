@@ -1,0 +1,395 @@
+SMF Store Changelog
+
+4.0.5
+!Hide MyProducts link for store admins.
+!Upgrade encryption to openssl instead of mcrypt if storing payment information
+
+4.0.4
+!Fix for when using alternative paypal no shipping
+
+4.0.3
+!Remove create_function for PHP 7.4+ support
+
+Version 4.0.2
+!Fix for buy it now items with no shipping adding shipping condition cost when there is nothing to fix
++Added auspost.com.au postal tracking support.
+
+Version 4.0.1
+!Fixes for PHP 7.4
+
+
+Version 4.0
++Added option to manually assign a license code to a member.
++Added a store button to the top menu inside the store when you are not on the main page of the store.
++Added Date as a new sort by option on category listing
++Added option to delete search log for user searches
++Filesizes are displayed better instead of just being kilobytes. Can be megabytes,gigabytes etc
++Updated MicroData to https://schema.org
+!Related items on view item page is now 100% width
++Updated to latest version of Highslide JS
+!Switched to sha1 instead of md5 for store hash checks
+!Fixed option to delete ratings on products for members that were deleted
+!Permission hidden categories no longer appear in the search category dropdown.
+!Fixed search results to respect category level permissions.
+!Send to friend now requires to be a member to reduce spam
+!Removed old Google+ code
+
+Version 3.0.5
++Added email note option as a product level setting. When the product is purchased this field will be appended to the items order.
+
+Version 3.0.4
++Added total price, shipping, tax totals on packing slip page
+
+Version 3.0.3
++Added paypal locale support to do customizations for international users. Under Admin -> Store Configuration -> Payment Modules
+
+Version 3.0.2
++Added notification an abandoned cart email setting with editable text from the store admin area.
++Added setting to empty cart after a period of time
+
+Version 3.0.1
+!Fixed bug with guest downloads not working when using agreements on a download file
+
+Version 3.0
++New sorting and paging options on category level to help order products. Sort options include by price, title, rating, and total comments
++Added Search by license code or member name on licenses page
++Added a new setting called "Notify all store admins of item purchase" which sends an email to all store admins that an item has been purchased. This email message and subject can be customized in the email template section.
+!Changed how emails are sent for shopping cart purchases. Now sends just one email not matter how many items in the cart. Instead of an email for each item.
+!Removed some mysql_ functions from SMF 2.0 version
+!Moved the viewers under view to the same line for store admins on the view product page.
+!Updated sharing links to https
+!Fixed bug with Add Product link showing in categories for guests
+!Removed the duplicate print item button on view product page.
+!Send to friend disabled on new installs by default
+!Fixed downloads in mytransactions for users store showing other store owners transactions SMF 2.0.x
+!Fixed typo in transaction export for payment status heading in SMF 2.0.x
+!Hide related items link for userstore users on edit product
+!Fixed paging links and search in stats and downloads and the comment approval area to stay in the admin section SMF 2.0.x
+!Better file deletion checks
++Added support for Russian Rouble
+
+Version 2.5.7
+!Fixed if the same membership subscription is bought keep the date to expire as the new date.
+
+Version 2.5.6
+!PayPal IPN https updates required by Sept 30, 2016
+
+Version 2.5.5
+!Fixed missing text string for cannot user store permission
+
+Version 2.5.4
++Added option to store tracking code and display it to a client supports FedEx,DHL,ontrac,UPS,USPS
+
+Version 2.5.3
++Added setting to enable highslide instead of lightbox to enlarge images
+
+Version 2.5.2
++Added option to give SMF Shop credits from an item purchase
+
+Version 2.5.1
++Added an add product link if your a store admin or have the user store permission in the top store tabs
++Added option to store paypal address when adding an item. Also under under forum profile you can enter your store paypal address.
+
+Version 2.5
++Updated html markup style to improve display for SMF 2.0
++Added setting on view item only to show membergroup price options only if better than the item's price
++Alternate table row styles in different sections of the admin area to make it easier to read
++Added shipping condition based on weight.
++Added checkbox approve/delete comments on the approve comments page
++Better formatting of GBP pricing
++Added default currency select setting used when adding a new product
++Added better copyright removal purchase system
+!Fixed bug with meta description for facebook property not escaping quotes correctly
+!Fixed price on wishlist page to allow showing custom membergroup price
+!Fixed critical issue with the shopping cart allowing purchasing of items at not the checkout price.
+!You can now search for hidden transactions
+!Fixed issue with multiple pages for the myproducts area.
+
+Version 2.0.4
+!Fixed display of membergroup other prices in all areas of store setting now displays correctly.
+
+Version 2.0.3
+!Updated facebook sharing code
+
+Version 2.0.2
++New image size setting for medium image to display
++New setting to setup text on the frontpage of your store.
+Can be useful to display notices,announcements etc.
++Added an option under Settings to hide the forum name from the linktree.
+
+Version 2.0.1
+!Fixed a bug with giving all access to downloads feature which results in a 404 error.
+
+Version 2.0
++Added social sharing icons on view product page Twitter,Facebook,Google+ and addthis
++Added custom page system to create custom pages and user defined store tabs. Can useful to display store policies and other information
++Custom fields are now exported with transactions download reports
++Added packing slips when you view order detail to make it easier to print out a slip for delivery
+!Fixed sending warning of license keys low for a fileid that did not exist.
+!Fixed main store menu on view product in chrome was bunched. Now aligned on the left handside.
++Comment display on store items for user/avatar information improved.
+!Improved the top rated main page block to be an average
++Added more navigation in certain areas of store for better user experience.
+!Fixed some error log issues in certain cases: add picture/edit related items, guest purchases, send to friend.
++Product display added date label next to date added for the product
+
+Version 1.4.2
+!Fixed issue with receiving IPN payments in SMF 2.0. SMF added another security check that prevented guests from accessing SSI which also caused other scripts that include SSI as guest to fail.
+
+Version 1.4.1
+!Fixed bug with toggle shipping
+
+Version 1.4
++Users can add their own products. New permission for users to manage their own products to a category that has the userstore permission. With the Userstore permission they gain two new tabs MyProducts and MyTransactions. MyProducts lists the products the user controls and MyTransactions lists any purchases/orders that were made from their products.
++Improved search engine results in google using microdata for Google complete product information along with rating information This will make your products standout in search results
++Added product options to control the start/end date of an item. Note admin's can still see the item
++Added setting to allow you to display the qty remaining of an item
++Added license code/key next to download link
+!Fixed item in stock message on no category display of items
+!Fixed bug where a user with the shopping cart could go back to the same item on the product page an add to cart to go past the stock limit
++New currencies supported Brazilian Real,Israeli New Sheqel,Malaysian Ringgit,Mexican Peso,Philippine Peso, Taiwan New Dollar, Thai Baht  
+!Fixed spellcheck for SMF 2.0 in IE8  
+
+Version 1.3.12
+!Fixed bug with free product purchases not passing custom field data
+
+Version 1.3.11.2
+!Fixed permission check for assigning members to a membergroup for SMF 2.0
+
+Version 1.3.11.1
+!Fixed issue with SMF 2 RC3 when adding a member to a membergroup on purchase
+
+Version 1.3.11
+!Fixed duplicate products showing up in main page blocks
+!Fixed issue with MySQL 5.5 since it no longer supports the Type for create tables uses Engine instead
+
+Version 1.3.10.3
+!Fixed bug in SMF 2.0 with adding a custom field to a product
+
+Version 1.3.10.2
+!Forgot closing form tag on view transactions page for SMF 1.1.x which led to download error on items to ship view
+
+Version 1.3.10.1
+!Fixed some query issues with the category level permissions
+
+Version 1.3.10
++Added category level permissions for membergroups
++Added option under transactions to hide them.
+!Fixed hardcoded colspan column for main page blocks if you have the number items different than 4
+
+Version 1.3.9
++Updated more of the style to use more curve elements for SMF 2.0 RC3
++Added simple system to add stock for custom field options. Only handles on a field level. If the custom field item is not in stock it is not shown on the main item page
+
+Version 1.3.8
+!Fixed undefined error on view basket
++Added setting to control whether the contact form is shown or not.
+!Fixed some undefined errors for SMF 1.1.x on add to cart/checkout
+!Fixed a bug if you have shopping cart disabled. The QTY was not getting passed.
+
+Version 1.3.7
++Added support for SMF 2.0 RC3
+!Fixed bug with downloads if you have guest downloads/secure link enabled for SMF 1.1.x
++Added formatting of terms of service supports BBC
+
+Version 1.3.6
++Now sends the product name to PayPal for shopping cart items up to 127 characters for all items in the cart total
++Added give free product link on the view product page
++Added secure download link option for digital downloads purchased by guests. Needs to be enabled under Store Configuration in order to work
+!Coupons don't report as used until the transaction completes
+
+Version 1.3.5a
+!Missed one bbc description field name change
+
+Version 1.3.5
+!Fixed undefined errors for scripturl in store.english.php in SMF 2.0
+!Fixed delete picture not deleting files
+!Fixed bbc editor for categories/products in SMF 2.0 not working in IE6/IE7
+!Fixed possible undefined errors for the storeipn files
+!Items that do not require shipping no longer go towards shipping conditions
+
+Version 1.3.4
+!Fixed if group expire days is set to zero to make the member never expire from that group.
+!Fixed formatting issue on the thankyou page
++Added setting to control whether the membergroup price that the member is in is shown in all places uses more sql queries.
+!Fixed from email showing server email. Switched to SMF's internal mail function
+
+Version 1.3.3
+!Fixed page title on viewers page
+!Changed the product list page to show estimated revenue
++Added if the same product is added twice to the shopping cart does not add a separate entry just increases qty. If there are custom fields it does not group them together.
++Added option to add sales price on item creation not just on the edit item page
+!No longer shows view more pictures link if there is only one picture for the item
+!Fixed comma separator subcategories for SMF 2
++Added link tree to a couple pages edit item, add comment, edit related items, edit files pictures and manage select fields
+!Fixed bug not allowing items to be bought for free if the coupon code allows it
+!Fix bug with trying to apply coupon code to an item that does not allow qty changing when the shopping cart is disabled
++Added support to get filesize for remote files
+!Fixed Pricing Tiers for SMF 2 missed a mysql column
+
+Version 1.3.2
++Added showing of product options on the shopping cart display
++Added pricing tier display to the store item view page
+!Sales Price now overrides pricing tiers
+!Fixed bug with wrong pricing tier price being displayed
+!Fixed bug with deleting pricing tiers redirecting back to wrong item
++Added comma between subcategories on subcategory link display
+!Fixed bug with older transactions when clicking on order detail
+
+Version 1.3.1
+!Fixed database error when giving a free product to a user
+!Fixed issue deleting a select field value
+!Fixed missing shopping cart tab issue missing global variable $modSettings
++Added option to import select field items from other products on the manage select page
+!Fixed a couple of undefined errors on the print view page in SMF 1.1.x
+!Fixed an upgrade issue with custom fields
+!Fixed simple permission text display in SMF 2.0.x
+
+Version 1.3
++Added guest purchase product support. Guests can now buy items and use the shopping cart
++Added option instead of PayPal to collect billing information manually
++Added option to add unlimited attributes to an item to allow a user to customize a product. Such as select boxes, input  
+boxes, checkboxes and textareas.
++Added pricing tiers which allows you to set the price of the product based on the qty
++Added feature to customize emails that are sent out from the store
+!Fixed some html/xhtml markup issues
++Added bbc buttons to add/edit category of the store.
++Added setting to control the number of items shown on the index page blocks of the store
++Added feature to view which members viewed a store item. Helps if you want to follow up with a user.
++Added Wish List system
++Added Send to a friend feature. Allows users to email their friends about a product and include a note.
++Added related items system. Allows other related items to be seen on the view product page.
++Added option to flag items as on sale and specify a sale price
++Added options to hide products from certain member groups.
++Added option when you create/edit products to add a weight useful if you enable calculating shipping costs based on weight with PayPal.
++Added searching of download logs
++Added remote file support for downloads inside the Store.
+!Fixed sending email in store contact page in html instead of plain text
++Added Subscription Support for PayPal. Items can be set to have recurring billing such as monthly, yearly, weekly based on settings that you choose.
++Added Total Sales and Total Revenue to the Products List page
++Added export product list to csv
++Added settings to control a couple fields on product display
+!Fixed from name on emails sent from the store.
+!Fixed a bug with qty that allowed people to buy more than in stock
++Updated the interface for the store.
+!Fixed a bug with the shipping condition system since condition was a keyword in MySQL
++Better theme links for sublevel categories
++Added option to disable lightbox for pictures
+
+Version 1.2.5
++Added Shipping price condition system
+
+Version 1.2.4
+!Fixed issue with tax setting if it was more than 2 decimal spaces.
+!Fixed issue with e-check's and pending payments not reporting the current qty in myorders/transactions
++Added free items that require shipping now ask for shipping information
++Shopping cart will now show primary product image
+!Fixed issue on the payment modules page not showing all the options in internet explorer
+!Fixed a bug processing transactions that used coupons
+!Fixes some odd sandbox testing issues.
+
+Version 1.2.3
+!Fixed an issue with stores that have a custom tax setup inside PayPal
+
+Version 1.2.2
+!Fixed spelling error on the myorders page.
+
+Version 1.2.1
+!Fixed a buying items without shopping cart causing db error when processing the transaction.
+!Fixed an issue causing the wrong next check date to be set to check for expired members.
+
+Version 1.2
++Added subcategories links under main store categories
++Added item option to allow download of all files from all digital products. Useful for a product to give access to all  
+downloads.
++Added Thank You page after a buyer purchases an item
++Added total money made for last seven, thirty, and year under Downloads and Stats
++Added support for fraud checking via the fraud check service (in the works)
++Added formatting for Canadian and Australian dollars.
+!Fixed file links for downloads left if unlimited to show unlimited
++Added option for PayPal to toggle sandbox mode
+!Fixed custom fields that are used with PayPal when used with the shopping cart
++Added support for custom membergroup prices for each item
++Added support for items to be purchased for free.
+!Fixed buying single items in qty which made the price higher.
++Added option to count shipping price only once if more than one item is bought at a time
+!Fixed the item prices to support very high price items
++Added lightbox to the store pictures
+!Changed the page function to use smf's built in page system
+!Fixed the subcategory display on underneath parent categories to be in the correct order.
++Added captcha to add comment page for guests only
++A personal message is now sent to the customer when an item has been marked as shipped
++Added setting to control the number of items per row
++Added option to include conversion tracking on the thank you page. An ideal spot to place your adwords or other ppc  
+conversion tracking system.
++Added option when adding/editing an item to display a product in additional categories
++Added full link tree in view item page.
++Adding changing the display order of items in the store. Only works with items that are located in a primary category.
++Added searching for items.
++Added option to add a license agreement to a download and have the buyer agree to it before downloading a digital product
++Changes to myorders page to improve the layout
++Added a print item view option to the store
++Added an option to change the qty of an item on checkout for the shopping cart.
++Added a feature to log all searches made in the store which could give some useful information to the store owner.
++Added under coupons an area for you to search coupons used on transactions and by what member.
++Added option to use a custom store name instead of just Store under settings.
++Added basic tax support. Allows you to set a flat percent tax for all purchases.
+
+Version 1.1.8
++Added option to log invalid transactions in the transactions table.
+ 
+
+Version 1.1.7
+!Fixed change QTY page layout for some themes
+
+
+Version 1.1.6
+!Fixed adding items/editing for some php versions.
+!Fixed applying coupon if total coupon per member is set.
+
+Version 1.1.5
++Added the option to purchase items in quantities
+
+Version 1.1.4
+!Fixed Shopping Cart currency
+
+Version 1.1.3.1
+!Fixed correct stock information for blocks
+ 
+Version 1.1.3
+!Fixed applying coupons
+!Fixed show it shows correct instock information on the item thumbnails
+
+Version 1.1.2
+!Fixed category image delete.
++Added setting to allow only buyers to comment on an item
+
+Version 1.1.1
+!Fixed in stock qty to show out of stock if stock is set to zero
+!Fixed option to hide stock qty if stock is enabled
+!Fixed guests only see buy it now or shopping cart image option depending on the store setting
+!Fixed shopping cart apply coupon
+
+
+Version 1.1
++Added Coupons. Coupons support percent or amount based. Can be set to use on all items or a specific item. Coupons can also  
+expire and have a usage limit.
++Added shopping cart system
+!Fixed editing products and guest view item page
+!Fixed importing files from a path on the website
+!Fixed Guest redirection for buying items
++Added a more secure price checking system.
+!Fix formatting display of USD currency to two decimal places
++Added option to mark an item as being shipped or not shipped
++Added total on main store view and settings page to list the total items not shipped if they require shipping
++Added an inventory section in the admin panel to view the current number of items currently in stock for items that require  
+stock
++Added main page blocks for most recent, most viewed, most commented, and top rated products.
++Added product download links expire after a number of days
++Added option to download transaction logs on the view transactions page
+!Fixed searching for transaction id on view transaction page
++Added notes page on give free product and allowed you to edit transactions for notes.
++Added option to specify a different PayPal payment address for a product.
+!Fixed changing member groups on item purchase. If a primary group is set then it adds the new group in the users secondary member group.
+
+Version 1.0 released May 25, 2007

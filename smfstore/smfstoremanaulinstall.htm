@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>SMF Store Manual Install</title>
+
+		<style type="text/css">
+			body
+			{
+				background-color: #E5E5E8;
+				margin: 0px;
+				padding: 0px;
+			}
+			body, td
+			{
+				color: #000000;
+				font-size: small;
+				font-family: verdana, sans-serif;
+			}
+			div#header
+			{
+				background-image: url(catbg.jpg);
+				background-repeat: repeat-x;
+				background-color: #88A6C0;
+				padding: 22px 4% 12px 4%;
+				color: white;
+				font-family: Georgia, serif;
+				font-size: xx-large;
+				border-bottom: 1px solid black;
+				height: 40px;
+			}
+			div#content
+			{
+				padding: 20px 30px;
+			}
+			div.error_message
+			{
+				border: 2px dashed red;
+				background-color: #E1E1E1;
+				margin: 1ex 4ex;
+				padding: 1.5ex;
+			}
+			div.panel
+			{
+				border: 1px solid gray;
+				background-color: #F6F6F6;
+				margin: 1ex 0;
+				padding: 1.2ex;
+			}
+
+			/* H1 Added by Daniel15 */
+			div.panel h1
+			{
+				margin: 0;
+				margin-bottom: 2ex;
+				padding-bottom: 3px;
+				border-bottom: 1px solid black;
+				font-size: 14pt;
+				font-weight: normal;
+			}
+			div.panel h2
+			{
+				margin: 0;
+				margin-bottom: 0.5ex;
+				padding-bottom: 3px;
+				border-bottom: 1px dashed black;
+				font-size: 14pt;
+				font-weight: normal;
+			}
+
+
+			div.panel h3
+			{
+				font-size: 12pt;
+				font-weight: bold;
+			}
+
+			div.panel h4
+			{
+				margin: 0;
+				margin-bottom: 2ex;
+				font-size: 10pt;
+				font-weight: normal;
+			}
+			form
+			{
+				margin: 0;
+			}
+			td.textbox
+			{
+				padding-top: 2px;
+				font-weight: bold;
+				white-space: nowrap;
+				padding-right: 2ex;
+			}
+
+			.error
+			{
+				font-weight: bold;
+				color: red;
+			}
+
+			pre
+			{
+				border: 1px dotted #aaaaaa;
+				overflow: auto;
+			}
+
+			/* Begin GeSHi stuff */
+			/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter) */
+.php .imp {font-weight: bold; color: red;}
+.php .kw1 {color: #b1b100;}
+.php .kw2 {color: #000000; font-weight: bold;}
+.php .kw3 {color: #000066;}
+.php .co1 {color: #808080; font-style: italic;}
+.php .co2 {color: #808080; font-style: italic;}
+.php .coMULTI {color: #808080; font-style: italic;}
+.php .es0 {color: #000099; font-weight: bold;}
+.php .br0 {color: #66cc66;}
+.php .st0 {color: #ff0000;}
+.php .nu0 {color: #cc66cc;}
+.php .me1 {color: #006600;}
+.php .me2 {color: #006600;}
+.php .re0 {color: #0000ff;}
+.php .re1 {color: #ff0000}
+			/* End GeSHi stuff */
+		</style>
+		<script language="javascript" type="text/javascript">
+			<!-- Begin
+			var ns4 = (document.layers) ? true : false;
+			var ie4 = (document.all && !document.getElementById) ? true : false;
+			var ie5 = (document.all && document.getElementById) ? true : false;
+			var ns6 = (!document.all && document.getElementById) ? true : false;
+
+			function show (sw,obj)
+			{
+				if (sw && (ie4 || ie5) ) document.all[obj].style.display = "inline";
+				if (!sw && (ie4 || ie5) ) document.all[obj].style.display = "none";
+				if (sw && ns4) document.layers[obj].display = "inline";
+				if (!sw && ns4) document.layers[obj].display = "none";
+			}
+			// End -->
+		</script></head><body>
+		<div id="header">
+			<div>SMF Store Manual Install</div>
+		</div>
+
+		<div id="content">
+
+
+
+			<div class="panel">
+
+				<h1>General Package Information</h1>
+				<h4>This is general information about the package, such as the package ID and name.</h4>
+				<strong>Package ID: </strong>vbgamer45:smfstore<br>
+				<strong>Package name: </strong>SMF Store<br>
+				<strong>Package version: </strong>1.0<br>
+				<strong>Package type: </strong>modification<br><br>
+			</div>
+
+
+			<div class="panel">
+				<h1>Installation instructions for SMF versions: 1.1.2,1.1.1,1.1</h1>
+						<h3>Readme:</h3>
+						<em>*******************************<br>
+SMF Store<br>
+By: vbgamer45<br>
+http://www.smfhacks.com<br>
+*******************************<br>
+<br>
+Mod Information: <br>
+For SMF 1.1.2<br>
+A Store system for SMF<br>
+<br>
+Install Information:<br>
+Install via the SMF's Package Manager via upload package.<br>
+<br>
+Setup:<br>
+For Settings make sure you enter your PayPal Bussiness Account email.<br>
+<br>
+In your PayPal.com Profile you need to the path the store's IPN file<br>
+Example:<br>
+http://www.yourforum.com/storeipn.php<br>
+<br>
+<br>
+<br>
+############################################<br>
+License Information:<br>
+SMF Store is NOT free software.<br>
+This software may not be redistributed.<br>
+<br>
+The license is good for a single instance / install on a website.<br>
+You are allowed only one active install for each license purchase.<br>
+<br>
+Links to http://www.smfhacks.com must remain unless<br>
+branding free option is purchased.<br>
+#############################################<br>
+<br>
+Other mods can be found at SMFHacks.com<br>
+Include:<br>
+SMF Staff Mod<br>
+SMF Links<br>
+SMF Trader System<br>
+SMF Archive<br>
+SMF Tags<br>
+Profile Comments<br>
+<br>
+</em><br>
+						<hr><br>
+					<strong>PHP script to execute:</strong> storeinstall.php<br>
+
+					<h3>Files installed</h3>
+					<ul>
+						<li>Store.php will be copied to <a href="http://www.smfhacks.com/packageparser/variables.htm">$sourcedir</a></li>
+						<li>Store.template.php will be copied to <a href="http://www.smfhacks.com/packageparser/variables.htm">$themedir</a></li>
+						<li>storeipn.php will be copied to <a href="http://www.smfhacks.com/packageparser/variables.htm">$boarddir</a></li>
+						<li>Store.english.php will be copied to <a href="http://www.smfhacks.com/packageparser/variables.htm">$themedir</a>/languages</li>
+						<li>Store.english-utf8.php will be copied to <a href="http://www.smfhacks.com/packageparser/variables.htm">$themedir</a>/languages</li>
+					</ul>
+
+					<h3>Directories installed</h3>
+					<ul>
+						<li>Store will be copied to $boarddir</li>
+					</ul>
+				<h2>Modifications to SMF files</h2>
+					<h3>In file <a href="http://www.smfhacks.com/packageparser/variables.htm">$languagedir</a>/Modifications.english.php</h3>
+						Find: <pre class="php"><span class="kw2">?&gt;</span></pre><br><br>
+						Add before:<br>
+						<pre class="php">&nbsp;
+<span class="co1">//Begin SMF Store Text Strings</span>
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'smfstore_menu'</span><span class="br0">]</span> = <span class="st0">'Store'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'smfstore_admin'</span><span class="br0">]</span> = <span class="st0">'Store Configuration'</span>;
+&nbsp;
+<span class="co1">//Permissions</span>
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissiongroup_smfstore'</span><span class="br0">]</span> = <span class="st0">'SMF Store'</span>;
+&nbsp;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionname_smfstore_view'</span><span class="br0">]</span> = <span class="st0">'View Store'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionhelp_smfstore_view'</span><span class="br0">]</span> = <span class="st0">'Allows the user to view the Store'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'cannot_smfstore_view'</span><span class="br0">]</span> = <span class="st0">'You are not allowed to view the Store'</span>;
+&nbsp;
+&nbsp;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionname_smfstore_rateitem'</span><span class="br0">]</span> = <span class="st0">'Rate Item'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionhelp_smfstore_rateitem'</span><span class="br0">]</span> = <span class="st0">'Allows the user to rate an item.'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'cannot_smfstore_rateitem'</span><span class="br0">]</span> = <span class="st0">'You are not allowed to rate that item.'</span>;
+&nbsp;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionname_smfstore_comment'</span><span class="br0">]</span> = <span class="st0">'Add Comments'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionhelp_smfstore_comment'</span><span class="br0">]</span> = <span class="st0">'Allows the user to leave comments on an item.'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'cannot_smfstore_comment'</span><span class="br0">]</span> = <span class="st0">'You are not allowed to leave comments.'</span>;
+&nbsp;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionname_smfstore_editcomment'</span><span class="br0">]</span> = <span class="st0">'Edit own Comment'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionhelp_smfstore_editcomment'</span><span class="br0">]</span> = <span class="st0">'Allows the user to edit their own comments.'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'cannot_smfstore_editcomment'</span><span class="br0">]</span> = <span class="st0">'You are not allowed to edit that comment.'</span>;
+&nbsp;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionname_smfstore_autocomment'</span><span class="br0">]</span> = <span class="st0">'Auto Approve Comments'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionhelp_smfstore_autocomment'</span><span class="br0">]</span> = <span class="st0">'Comments do not need to wait for approval.'</span>;
+&nbsp;
+&nbsp;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionname_smfstore_manage'</span><span class="br0">]</span> = <span class="st0">'Admin Store'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'permissionhelp_smfstore_manage'</span><span class="br0">]</span> = <span class="st0">'Allows the user to add/delete/edit all categories. Delete Comments, Delete Items, Approve Comments'</span>;
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'cannot_smfstore_manage'</span><span class="br0">]</span> = <span class="st0">'You are not allowed to manage store.'</span>;
+&nbsp;
+<span class="co1">//END SMF Store Text Strings			</span>
+&nbsp;</pre><br><br><br>
+					<h3>In file <a href="http://www.smfhacks.com/packageparser/variables.htm">$languagedir</a>/Who.english.php</h3>
+						Find: <pre class="php"><span class="kw2">?&gt;</span></pre><br><br>
+						Add before:<br>
+						<pre class="php">&nbsp;
+<span class="co1">//Begin SMF Store</span>
+<span class="re0">$txt</span><span class="br0">[</span><span class="st0">'whoall_store'</span><span class="br0">]</span> = <span class="st0">'In the &lt;a href="'</span> . <span class="re0">$scripturl</span> . <span class="st0">'?action=store"&gt;Store&lt;/a&gt;'</span>;
+<span class="co1">//END SMF Store Strings			</span>
+&nbsp;</pre><br><br><br>
+					<h3>In file <a href="http://www.smfhacks.com/packageparser/variables.htm">$boarddir</a>/index.php</h3>
+						Find: <pre class="php">&nbsp;
+		<span class="st0">'sticky'</span> =&gt; <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'LockTopic.php'</span>, <span class="st0">'Sticky'</span><span class="br0">)</span>,</pre><br><br>
+						Add after:<br>
+						<pre class="php">		<span class="st0">'store'</span> =&gt; <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'Store.php'</span>, <span class="st0">'StoreMain'</span><span class="br0">)</span>,</pre><br><br><br>
+					<h3>In file <a href="http://www.smfhacks.com/packageparser/variables.htm">$themedir</a>/index.template.php</h3>
+						Find: <pre class="php"><span class="re0">$current_action</span> = <span class="st0">'admin'</span>;
+	<span class="kw1">if</span> <span class="br0">(</span><a href="http://www.php.net/in_array"><span class="kw3">in_array</span></a><span class="br0">(</span><span class="re0">$context</span><span class="br0">[</span><span class="st0">'current_action'</span><span class="br0">]</span>, <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span></pre><br><br>
+						Add after:<br>
+						<pre class="php"><span class="st0">'store'</span>,</pre><br><br><br>
+						Find: <pre class="php"><span class="co1">// the [member] list button</span>
+	<span class="kw1">if</span> <span class="br0">(</span><span class="re0">$context</span><span class="br0">[</span><span class="st0">'allow_memberlist'</span><span class="br0">]</span><span class="br0">)</span>
+		<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="br0">(</span><span class="re0">$current_action</span> == <span class="st0">'mlist'</span> || <span class="re0">$context</span><span class="br0">[</span><span class="st0">'browser'</span><span class="br0">]</span><span class="br0">[</span><span class="st0">'is_ie4'</span><span class="br0">]</span><span class="br0">)</span> ? <span class="st0">'&lt;td class="maintab_active_'</span> . <span class="re0">$first</span> . <span class="st0">'"&gt;&amp;nbsp;&lt;/td&gt;'</span> : <span class="st0">''</span> , <span class="st0">'
+				&lt;td valign="top" class="maintab_'</span> , <span class="re0">$current_action</span> == <span class="st0">'mlist'</span> ? <span class="st0">'active_back'</span> : <span class="st0">'back'</span> , <span class="st0">'"&gt;
+					&lt;a href="'</span>, <span class="re0">$scripturl</span>, <span class="st0">'?action=mlist"&gt;'</span> , <span class="re0">$txt</span><span class="br0">[</span><span class="nu0">331</span><span class="br0">]</span> , <span class="st0">'&lt;/a&gt;
+				&lt;/td&gt;'</span> , <span class="re0">$current_action</span> == <span class="st0">'mlist'</span> ? <span class="st0">'&lt;td class="maintab_active_'</span> . <span class="re0">$last</span> . <span class="st0">'"&gt;&amp;nbsp;&lt;/td&gt;'</span> : <span class="st0">''</span>;
+&nbsp;</pre><br><br>
+						Add after:<br>
+						<pre class="php">&nbsp;
+	<span class="co1">// the [SMF Store] button</span>
+	<span class="kw1">if</span> <span class="br0">(</span><span class="re0">$context</span><span class="br0">[</span><span class="st0">'allow_smfstore_view'</span><span class="br0">]</span><span class="br0">)</span>
+		<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="br0">(</span><span class="re0">$current_action</span> == <span class="st0">'store'</span> || <span class="re0">$context</span><span class="br0">[</span><span class="st0">'browser'</span><span class="br0">]</span><span class="br0">[</span><span class="st0">'is_ie4'</span><span class="br0">]</span><span class="br0">)</span> ? <span class="st0">'&lt;td class="maintab_active_'</span> . <span class="re0">$first</span> . <span class="st0">'"&gt;&amp;nbsp;&lt;/td&gt;'</span> : <span class="st0">''</span> , <span class="st0">'
+				&lt;td valign="top" class="maintab_'</span> , <span class="re0">$current_action</span> == <span class="st0">'store'</span> ? <span class="st0">'active_back'</span> : <span class="st0">'back'</span> , <span class="st0">'"&gt;
+					&lt;a href="'</span>, <span class="re0">$scripturl</span>, <span class="st0">'?action=store"&gt;'</span> , <span class="re0">$txt</span><span class="br0">[</span><span class="st0">'smfstore_menu'</span><span class="br0">]</span>  , <span class="st0">'&lt;/a&gt;
+				&lt;/td&gt;'</span> , <span class="re0">$current_action</span> == <span class="st0">'store'</span> ? <span class="st0">'&lt;td class="maintab_active_'</span> . <span class="re0">$last</span> . <span class="st0">'"&gt;&amp;nbsp;&lt;/td&gt;'</span> : <span class="st0">''</span>;
+&nbsp;</pre><br><br><br>
+					<h3>In file <a href="http://www.smfhacks.com/packageparser/variables.htm">$sourcedir</a>/Subs.php</h3>
+						Find: <pre class="php"><span class="st0">'edit_settings'</span> =&gt; <span class="st0">'&lt;a href="'</span> . <span class="re0">$scripturl</span> . <span class="st0">'?action=serversettings;sesc='</span> . <span class="re0">$sc</span> . <span class="st0">'"&gt;'</span> . <span class="re0">$txt</span><span class="br0">[</span><span class="nu0">222</span><span class="br0">]</span> . <span class="st0">'&lt;/a&gt;'</span>,</pre><br><br>
+						Add after:<br>
+						<pre class="php">&nbsp;
+	<span class="st0">'store_settings'</span> =&gt; <span class="st0">'&lt;a href="'</span> . <span class="re0">$scripturl</span> . <span class="st0">'?action=store;sa=admin;sesc='</span> . <span class="re0">$sc</span> . <span class="st0">'"&gt;'</span> . <span class="re0">$txt</span><span class="br0">[</span><span class="st0">'smfstore_admin'</span><span class="br0">]</span> . <span class="st0">'&lt;/a&gt;'</span>,
+&nbsp;</pre><br><br><br>
+						Find: <pre class="php"><span class="re0">$context</span><span class="br0">[</span><span class="st0">'allow_calendar'</span><span class="br0">]</span> = allowedTo<span class="br0">(</span><span class="st0">'calendar_view'</span><span class="br0">)</span> &amp;&amp; !<a href="http://www.php.net/empty"><span class="kw3">empty</span></a><span class="br0">(</span><span class="re0">$modSettings</span><span class="br0">[</span><span class="st0">'cal_enabled'</span><span class="br0">]</span><span class="br0">)</span>;</pre><br><br>
+						Add after:<br>
+						<pre class="php">&nbsp;
+		<span class="re0">$context</span><span class="br0">[</span><span class="st0">'allow_smfstore_view'</span><span class="br0">]</span> = allowedTo<span class="br0">(</span><span class="st0">'smfstore_view'</span><span class="br0">)</span>;</pre><br><br><br>
+					<h3>In file <a href="http://www.smfhacks.com/packageparser/variables.htm">$sourcedir</a>/ManagePermissions.php</h3>
+						Find: <pre class="php"><span class="st0">'pm'</span> =&gt; <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span>
+				<span class="st0">'pm_read'</span> =&gt; <span class="kw2">false</span>,
+				<span class="st0">'pm_send'</span> =&gt; <span class="kw2">false</span>,
+			<span class="br0">)</span>,</pre><br><br>
+						Add after:<br>
+						<pre class="php">&nbsp;
+<span class="st0">'smfstore'</span> =&gt; <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span>
+				<span class="st0">'smfstore_view'</span> =&gt; <span class="kw2">false</span>,
+				<span class="st0">'smfstore_rateitem'</span> =&gt; <span class="kw2">false</span>,
+				<span class="st0">'smfstore_comment'</span> =&gt; <span class="kw2">false</span>,
+				<span class="st0">'smfstore_editcomment'</span> =&gt; <span class="kw2">false</span>,
+				<span class="st0">'smfstore_autocomment'</span> =&gt; <span class="kw2">false</span>,
+				<span class="st0">'smfstore_manage'</span> =&gt; <span class="kw2">false</span>,
+			<span class="br0">)</span>,</pre><br><br><br>
+					<h3>In file <a href="http://www.smfhacks.com/packageparser/variables.htm">$boarddir</a>/index.php</h3>
+						Find: <pre class="php">loadPermissions<span class="br0">(</span><span class="br0">)</span>;</pre><br><br>
+						Add after:<br>
+						<pre class="php">&nbsp;
+	<span class="co1">// Check if any group memberships have expired.</span>
+	<span class="kw1">if</span> <span class="br0">(</span><a href="http://www.php.net/empty"><span class="kw3">empty</span></a><span class="br0">(</span><span class="re0">$modSettings</span><span class="br0">[</span><span class="st0">'store_lastgroupexpire'</span><span class="br0">]</span><span class="br0">)</span> || <a href="http://www.php.net/time"><span class="kw3">time</span></a><span class="br0">(</span><span class="br0">)</span> &gt; <span class="re0">$modSettings</span><span class="br0">[</span><span class="st0">'store_lastgroupexpire'</span><span class="br0">]</span><span class="br0">)</span>
+	<span class="br0">{</span>
+		<span class="kw1">require_once</span><span class="br0">(</span><span class="re0">$sourcedir</span> . <span class="st0">'/Store.php'</span><span class="br0">)</span>;
+		CheckGroupExpire<span class="br0">(</span><span class="br0">)</span>;
+	<span class="br0">}</span></pre><br><br><br>
+			</div>
+
+		</div>
+	</body></html>
